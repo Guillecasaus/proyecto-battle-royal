@@ -1,0 +1,16 @@
+package ProyectoFinalJava;
+import javax.swing.*;	
+
+public class Menu {
+
+	public static void main(String[] args) {
+
+		
+	String opcionIniciarPartida = JOptionPane.showInputDialog("1. Iniciar Partida\n 2. Continuar Partida");
+	System.out.println("Hello "+opcionIniciarPartida);
+		
+		
+
+	}
+}
+

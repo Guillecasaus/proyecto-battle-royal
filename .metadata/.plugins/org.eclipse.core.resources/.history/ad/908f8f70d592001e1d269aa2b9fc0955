@@ -1,0 +1,20 @@
+package ProyectoFinalJava;
+import javax.swing.*;	
+
+public class Menu {
+
+	public static void main(String[] args) {
+
+
+	String opcionIniciarPartida = JOptionPane.showInputDialog("1. Iniciar Partida\n 2. Continuar Partida");
+	System.out.println("Hello "+yourname);
+		
+		
+	  JFrame frame = new JFrame("Hello Swing!!");
+	  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+	  frame.setSize(300,100); 
+	  frame.setVisible(true); //sin esta instrucciÃ³n no se hace visible
+		 	
+	}
+}
+

@@ -5,12 +5,16 @@ import java.util.List;
 
 public class Partida {
 
-	private List <Personaje> listaPersonajes = new ArrayList <Personaje>();
+	public static final Integer TURNO_INICIAL = 0;
+	
+	private List <Personaje> listaPersonajes; 
+	private List <Turno> listaTurnos;
 	private Integer turno;
 	
-	public Partida(Integer turno) {
-		super();
-		this.turno = turno;
+	public Partida() {
+		this.turno = Partida.TURNO_INICIAL;
+		this.listaPersonajes = new ArrayList <Personaje>();
+		this.listaTurnos = new ArrayList <Turno>();
 	}
 
 }
