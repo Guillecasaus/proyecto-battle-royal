@@ -1,5 +1,5 @@
 package ProyectoFinalJava;
 
 public enum TipoArma {
-	ataque, defensa
+	baston, espada, arco, mandoble, lanza, puñal
 }
