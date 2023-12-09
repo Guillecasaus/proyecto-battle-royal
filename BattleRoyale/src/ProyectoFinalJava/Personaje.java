@@ -14,21 +14,24 @@ public class Personaje {
 	private List <Herramientas> listaHerramientas; 
 	private TipoJugador tipo;
 	private Integer numeroHerramientas;
+	private TipoPersonaje tipoPer;
 		
-	public Personaje(String nombre, TipoJugador tipo) {
+	public Personaje(String nombre, TipoJugador tipo, TipoPersonaje tipoPer) {
 		this.nombre = nombre;
 		this.vidaPersonaje = Personaje.MAX_VIDA_PERSONAJE;
 		this.tipo = tipo;
 		this.listaHerramientas = new ArrayList<Herramientas>();
 		this.numeroHerramientas = Personaje.NUM_INICIAL_HERRAMIENTAS;
+		this.tipoPer = tipoPer;
 	}
 	
-	public Personaje(String nombre, TipoJugador tipo, Integer vida) {
+	public Personaje(String nombre, TipoJugador tipo, Integer vida,  TipoPersonaje tipoPer) {
 		this.nombre = nombre;
 		this.vidaPersonaje = vida;
 		this.tipo = tipo;
 		this.listaHerramientas = new ArrayList<Herramientas>();
 		this.numeroHerramientas = Personaje.NUM_INICIAL_HERRAMIENTAS;
+		this.tipoPer = tipoPer;
 	}
 	
 	public String getNombre() {
@@ -53,6 +56,22 @@ public class Personaje {
 
 	public void setListaHerramientas(List<Herramientas> listaHerramientas) {
 		this.listaHerramientas = listaHerramientas;
+	}
+
+	public TipoJugador getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(TipoJugador tipo) {
+		this.tipo = tipo;
+	}
+
+	public TipoPersonaje getTipoPer() {
+		return tipoPer;
+	}
+
+	public void setTipoPer(TipoPersonaje tipoPer) {
+		this.tipoPer = tipoPer;
 	}
 
 	@Override

@@ -1,0 +1,32 @@
+package ProyectoFinalJava;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Partida {
+
+	public static final Integer TURNO_INICIAL = 0;
+	public static final Integer NUM_MAX_JUGADORES = 10;
+	public static final Integer NUM_INICIAL_JUGADORES = 0;
+	
+	private List <Personaje> listaPersonajes; 
+	private List <Turno> listaTurnos;
+	private Integer turno;
+	private Integer jugadoresHumanos;
+	
+	public Partida() {
+		this.turno = Partida.TURNO_INICIAL;
+		this.listaPersonajes = new ArrayList <Personaje>();
+		this.listaTurnos = new ArrayList <Turno>();
+		this.jugadoresHumanos = Partida.NUM_INICIAL_JUGADORES;
+	}
+
+	public void nuevoPersonaje(Personaje personaje) {
+		this.listaPersonajes.add(personaje);
+	} 
+	
+	public void mostrarPersonajes() {
+		
+	}
+
+}
