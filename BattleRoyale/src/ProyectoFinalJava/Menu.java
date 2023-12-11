@@ -16,15 +16,19 @@ public class Menu {
 					case "1":
 						PersonajeMago mago = new PersonajeMago(nombreJugador, TipoJugador.humano);							
 						partidaActual.nuevoPersonaje(mago);
+						mago.asignarHerramienta(new HerramientaBaston("baston"));
 					break;	
 					case "2":
 						PersonajeGuerrero guerrero = new PersonajeGuerrero(nombreJugador, TipoJugador.humano);
 						partidaActual.nuevoPersonaje(guerrero);
+						guerrero.asignarHerramienta(new HerramientaBaston("baston"));
 					break;	
 					case "3":
 						PersonajeElfo elfo = new PersonajeElfo(nombreJugador, TipoJugador.humano);
 						partidaActual.nuevoPersonaje(elfo);
+						elfo.asignarHerramienta(new HerramientaBaston("baston"));
 					break;
+					//TODO Case 4 Salir
 					
 					default:	
 						JOptionPane.showMessageDialog(null, "Valor introducido erróneo");
