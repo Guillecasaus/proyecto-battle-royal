@@ -1,9 +1,0 @@
-package ProyectoFinalJava;
-
-public class HerramientaLanza {
-	public static final Double BASTON_BONUS = 1.7;
-	
-	public HerramientaBaston(String nombre) {
-		super(nombre, BASTON_BONUS, TipoArma.baston);
-	}
-}

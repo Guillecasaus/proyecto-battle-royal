@@ -3,10 +3,10 @@ package ProyectoFinalJava;
 public class Herramientas {
 
 	private String nombre;
-	private Double bonus;
+	private Integer bonus;
 	private TipoArma tipo;
 	
-	public Herramientas(String nombre, Double bonus, TipoArma tipo) {
+	public Herramientas(String nombre, Integer bonus, TipoArma tipo) {
 		this.nombre = nombre;
 		this.bonus = bonus;
 		this.tipo = tipo;
@@ -20,11 +20,11 @@ public class Herramientas {
 		this.nombre = nombre;
 	}
 
-	public Double getBonus() {
+	public Integer getBonus() {
 		return bonus;
 	}
 
-	public void setBonus(Double bonus) {
+	public void setBonus(Integer bonus) {
 		this.bonus = bonus;
 	}
 

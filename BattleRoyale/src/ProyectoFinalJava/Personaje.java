@@ -12,23 +12,23 @@ public class Personaje {
 	private String nombre;
 	private Integer vidaPersonaje;
 	private List <Herramientas> listaHerramientas; 
-	private TipoJugador tipoUser;
+	private TipoJugador tipo;
 	private Integer numeroHerramientas;
 	private TipoPersonaje tipoPer;
 		
-	public Personaje(String nombre, TipoJugador tipoUser, TipoPersonaje tipoPer) {
+	public Personaje(String nombre, TipoJugador tipo, TipoPersonaje tipoPer) {
 		this.nombre = nombre;
 		this.vidaPersonaje = Personaje.MAX_VIDA_PERSONAJE;
-		this.tipoUser = tipoUser;
+		this.tipo = tipo;
 		this.listaHerramientas = new ArrayList<Herramientas>();
 		this.numeroHerramientas = Personaje.NUM_INICIAL_HERRAMIENTAS;
 		this.tipoPer = tipoPer;
 	}
 	
-	public Personaje(String nombre, TipoJugador tipoUser, Integer vida,  TipoPersonaje tipoPer) {
+	public Personaje(String nombre, TipoJugador tipo, Integer vida,  TipoPersonaje tipoPer) {
 		this.nombre = nombre;
 		this.vidaPersonaje = vida;
-		this.tipoUser = tipoUser;
+		this.tipo = tipo;
 		this.listaHerramientas = new ArrayList<Herramientas>();
 		this.numeroHerramientas = Personaje.NUM_INICIAL_HERRAMIENTAS;
 		this.tipoPer = tipoPer;
@@ -58,12 +58,12 @@ public class Personaje {
 		this.listaHerramientas = listaHerramientas;
 	}
 
-	public TipoJugador getTipoUser() {
-		return tipoUser;
+	public TipoJugador getTipo() {
+		return tipo;
 	}
 
-	public void setTipoUser(TipoJugador tipoUser) {
-		this.tipoUser = tipoUser;
+	public void setTipo(TipoJugador tipo) {
+		this.tipo = tipo;
 	}
 
 	public TipoPersonaje getTipoPer() {
@@ -73,14 +73,13 @@ public class Personaje {
 	public void setTipoPer(TipoPersonaje tipoPer) {
 		this.tipoPer = tipoPer;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Personaje [nombre=" + nombre + ", vidaPersonaje=" + vidaPersonaje + ", listaHerramientas="
-				+ listaHerramientas + ", tipoUser=" + tipoUser + ", numeroHerramientas=" + numeroHerramientas + ", tipoPer="
-				+ tipoPer + "]";
+				+ listaHerramientas + ", tipo=" + tipo + "]";
 	}
-
+	
 	public Integer quitarVida(Integer damage) {
 		Integer vida;		
 		vida = this.getVidaPersonaje() - damage;

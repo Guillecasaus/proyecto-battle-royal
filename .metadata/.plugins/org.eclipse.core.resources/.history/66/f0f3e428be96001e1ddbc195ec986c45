@@ -1,9 +1,0 @@
-package ProyectoFinalJava;
-
-public class HerramientaMandoble extends Herramientas{
-	public static final Double MANDOBLE_BONUS = 1.8;
-	
-	public HerramientaMandoble(String nombre) {
-		super(nombre, MANDOBLE_BONUS, TipoArma.mandoble);
-	}
-}
