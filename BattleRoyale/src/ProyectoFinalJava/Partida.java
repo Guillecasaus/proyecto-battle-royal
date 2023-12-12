@@ -69,7 +69,7 @@ public class Partida {
 	}
 
 	public void jugadorEliminado(Integer posicionJugador) {	
-		this.listaPersonajes.remove(posicionJugador);
+		 this.listaPersonajes.remove( this.listaPersonajes.get(posicionJugador));
 		
 	}
 	
