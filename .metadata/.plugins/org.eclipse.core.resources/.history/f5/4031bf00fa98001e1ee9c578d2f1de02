@@ -13,8 +13,7 @@ public class PersonajeGuerrero extends Personaje {
 		return 15;
 	} 
 	
-	public Integer recuperarVida() {
-		return 10;
-	}
+	
+ 
 
 }

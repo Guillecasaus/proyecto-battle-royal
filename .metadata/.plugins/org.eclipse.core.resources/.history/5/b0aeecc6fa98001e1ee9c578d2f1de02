@@ -51,18 +51,8 @@ public class Partida {
 		return this.listaPersonajes.get(posicionJugador).quitarVida(damage);
 	}
 
-	public Integer obtenerVida(Integer posicionJugador) {
+	public Integer recuperarVida(Integer posicionJugador) {
 		return this.listaPersonajes.get(posicionJugador).recuperarVida();
 	}
-	
-	public Integer recuperarVida(Integer posicionJugador, Integer vida) {
-		return this.listaPersonajes.get(posicionJugador).sumarVida(vida);
-	}
 
-	public void jugadorEliminado(Integer posicionJugador) {
-		
-		
-		
-	}
-	
 }

@@ -57,15 +57,11 @@ public class Menu {
 		
 		Integer numTurnos = 0;
 		Integer numJugadorAtacante;
-		Integer jugadorRecuperarVida;
 		String menuPartida;
 		Integer damage;
-		Integer vida;
 		
 		do{
 			numJugadorAtacante = numTurnos % Partida.NUM_MAX_JUGADORES;
-			jugadorRecuperarVida = numTurnos % Partida.NUM_MAX_JUGADORES;
-			
 			menuPartida = JOptionPane.showInputDialog("Turno: " + numTurnos + "\nJugador Numero: " + numJugadorAtacante +"\n1. Atacar \n2. Recuperar Vida \n3 Coger Objeto");
 			
 			switch (menuPartida) {
@@ -76,8 +72,6 @@ public class Menu {
 					partidaActual.quitarDamage(jugadorAtacado, damage);
 				break;
 				case "2":
-					vida = partidaActual.obtenerVida(jugadorRecuperarVida);
-					partidaActual.recuperarVida(jugadorRecuperarVida, vida);
 					
 				break;	
 				case "3":

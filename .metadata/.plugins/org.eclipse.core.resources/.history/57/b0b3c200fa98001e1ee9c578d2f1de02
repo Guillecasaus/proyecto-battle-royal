@@ -89,22 +89,10 @@ public class Personaje {
 		return vida;
 	}
 	
-	public Integer sumarVida(Integer life) {
-		Integer vida;
-		vida = this.getVidaPersonaje() + life;
-		this.setVidaPersonaje(vida);
-		
-		return vida;
-	}
-	
 	public Integer habilidad() {
 		return 1;
 	}
 
-	public Integer recuperarVida() {
-		return 1;
-	}
-	
 	public Integer asignarHerramienta(Herramientas herramientaAsignar) {
 		if(this.numeroHerramientas >= Personaje.NUM_MAX_HERRAMIENTAS) {
 			return 0;		

@@ -13,8 +13,4 @@ public class PersonajeElfo extends Personaje {
 		return 20;
 	}  
 
-	public Integer recuperarVida() {
-		return 10;
-	}
-
 }

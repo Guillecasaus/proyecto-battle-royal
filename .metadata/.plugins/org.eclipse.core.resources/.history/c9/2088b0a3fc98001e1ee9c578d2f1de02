@@ -59,10 +59,4 @@ public class Partida {
 		return this.listaPersonajes.get(posicionJugador).sumarVida(vida);
 	}
 
-	public void jugadorEliminado(Integer posicionJugador) {
-		
-		
-		
-	}
-	
 }

@@ -89,14 +89,6 @@ public class Personaje {
 		return vida;
 	}
 	
-	public Integer sumarVida(Integer life) {
-		Integer vida;
-		vida = this.getVidaPersonaje() + life;
-		this.setVidaPersonaje(vida);
-		
-		return vida;
-	}
-	
 	public Integer habilidad() {
 		return 1;
 	}

@@ -76,8 +76,8 @@ public class Menu {
 					partidaActual.quitarDamage(jugadorAtacado, damage);
 				break;
 				case "2":
-					vida = partidaActual.obtenerVida(jugadorRecuperarVida);
-					partidaActual.recuperarVida(jugadorRecuperarVida, vida);
+					vida = partidaActual.recuperarVida(jugadorRecuperarVida);
+					partidaActual.recuperarVida(jugadorRecuperarVida);
 					
 				break;	
 				case "3":

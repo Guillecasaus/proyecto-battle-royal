@@ -13,8 +13,6 @@ public class PersonajeMago extends Personaje {
 		return 40;
 	} 
 	
-	public Integer recuperarVida() {
-		return 10;
-	}
+	
 
 }
