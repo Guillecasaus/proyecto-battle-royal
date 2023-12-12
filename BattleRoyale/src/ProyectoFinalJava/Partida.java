@@ -10,6 +10,8 @@ public class Partida {
 	public static final Integer TURNO_INICIAL = 0;
 	public static final Integer NUM_MAX_JUGADORES = 10;
 	public static final Integer NUM_INICIAL_JUGADORES = 0;
+	public static final Integer MAX_TURNOS = 15;
+	
 	
 	private List <Personaje> listaPersonajes; 
 	private List <Turno> listaTurnos;
@@ -31,11 +33,23 @@ public class Partida {
 		/*for(Personaje personajes : this.listaPersonajes) {
 			System.out.println("El personaje nombre : "+ personajes.getNombre());
 		}*/
+		
+		String texto = "";
 	
 		for(int i=0; i < this.listaPersonajes.size(); i++) {
 			System.out.println("Posicion: " + i + " Nombre Personaje: "+ this.listaPersonajes.get(i).getNombre() + " Tipo de personje: " + this.listaPersonajes.get(i).getTipoPer() + " Vida personaje: " + this.listaPersonajes.get(i).getVidaPersonaje());
-			JOptionPane.showMessageDialog(null, "Posicion: " + i + " Nombre Personaje: "+ this.listaPersonajes.get(i).getNombre() + " Tipo de personje: " + this.listaPersonajes.get(i).getTipoPer() + " Vida personaje: " + this.listaPersonajes.get(i).getVidaPersonaje() + "\n");
+			texto = texto + "Posicion: " + i + " Nombre Personaje: "+ this.listaPersonajes.get(i).getNombre() + " Tipo de personje: " + this.listaPersonajes.get(i).getTipoPer() + " Vida personaje: " + this.listaPersonajes.get(i).getVidaPersonaje() + "\n";
 		}
+		JOptionPane.showMessageDialog(null, texto);
 	}
 
+	public Integer obtenerDamage(Integer posicionJugador) {
+		return this.listaPersonajes.get(posicionJugador).habilidad();
+	}
+	
+	public Integer quitarDamage(Integer posicionJugador ,Integer damage) {
+		
+		return this.listaPersonajes.get(posicionJugador).quitarVida(damage);
+		
+	}
 }

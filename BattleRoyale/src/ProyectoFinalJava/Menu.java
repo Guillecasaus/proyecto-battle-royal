@@ -6,39 +6,85 @@ public class Menu {
 	public static void crearJugadores(Partida partidaActual) {
 		
 		Integer numJugadores = 0;
+		String nombreMaquina;
+		String nombreJugador;
 		
 		do {
-			String tipoJugador = JOptionPane.showInputDialog("1. Mago\n2. Guerrero\n3. Elfo");
-			
-			String nombreJugador = JOptionPane.showInputDialog("Personaje número: " + (numJugadores + 1) + ", Nombre: ");
+			String tipoJugador = JOptionPane.showInputDialog("1. Mago\n2. Guerrero\n3. Elfo\n4. Salir");
 			
 				switch(tipoJugador) {
 					case "1":
+						nombreJugador = JOptionPane.showInputDialog("Personaje número: " + (numJugadores + 1) + ", Nombre: ");
 						PersonajeMago mago = new PersonajeMago(nombreJugador, TipoJugador.humano);							
 						partidaActual.nuevoPersonaje(mago);
 						mago.asignarHerramienta(new HerramientaBaston("baston"));
 					break;	
 					case "2":
+						nombreJugador = JOptionPane.showInputDialog("Personaje número: " + (numJugadores + 1) + ", Nombre: ");
 						PersonajeGuerrero guerrero = new PersonajeGuerrero(nombreJugador, TipoJugador.humano);
 						partidaActual.nuevoPersonaje(guerrero);
 						guerrero.asignarHerramienta(new HerramientaBaston("baston"));
 					break;	
 					case "3":
+						nombreJugador = JOptionPane.showInputDialog("Personaje número: " + (numJugadores + 1) + ", Nombre: ");
 						PersonajeElfo elfo = new PersonajeElfo(nombreJugador, TipoJugador.humano);
 						partidaActual.nuevoPersonaje(elfo);
 						elfo.asignarHerramienta(new HerramientaBaston("baston"));
 					break;
-					//TODO Case 4 Salir
+					case "4":
+					
+						for(int i=numJugadores; i<Partida.NUM_MAX_JUGADORES; i++) {
+							nombreMaquina = "jugadorMaquina" + i;
+							PersonajeGuerrero guerreroMaquina = new PersonajeGuerrero(nombreMaquina, TipoJugador.maquina);
+							partidaActual.nuevoPersonaje(guerreroMaquina);
+							guerreroMaquina.asignarHerramienta(new HerramientaBaston("baston"));
+						}
+						numJugadores = Partida.NUM_MAX_JUGADORES;
+						
+					break;
 					
 					default:	
 						JOptionPane.showMessageDialog(null, "Valor introducido erróneo");
-			
 				}				
 			numJugadores++;
 		}while((numJugadores < Partida.NUM_MAX_JUGADORES));
 	
 		partidaActual.mostrarPersonajes();
 	
+	}
+	
+	public static void partidaEnCurso(Partida partidaActual) {
+		
+		Integer numTurnos = 0;
+		Integer numJugadorAtacante;
+		String menuPartida;
+		Integer damage;
+		
+		do{
+			numJugadorAtacante = numTurnos % Partida.NUM_MAX_JUGADORES;
+			menuPartida = JOptionPane.showInputDialog("Turno: " + numTurnos + "\nJugador Numero: " + numJugadorAtacante +"\n1. Atacar \n2. Recuperar Vida \n3 Coger Objeto");
+			
+			switch (menuPartida) {
+				case "1":
+					String jugadoresDisponibles = JOptionPane.showInputDialog("A que jugador quieres atacar: ");
+					int jugadorAtacado = Integer.parseInt(jugadoresDisponibles);
+					damage = partidaActual.obtenerDamage(numJugadorAtacante);
+					partidaActual.quitarDamage(jugadorAtacado, damage);
+				break;
+				case "2":
+					
+				break;	
+				case "3":
+					
+				break;	
+				
+				default:	
+					JOptionPane.showMessageDialog(null, "Valor introducido erróneo");
+			}
+			
+			numTurnos ++;
+			partidaActual.mostrarPersonajes();
+		}while(numTurnos < Partida.MAX_TURNOS);
 	}
 	
 	public static void main(String[] args) {
@@ -51,6 +97,7 @@ public class Menu {
 				Partida partidaActiva = new Partida();
 				JOptionPane.showMessageDialog(null, "Partida iniciada");
 				crearJugadores(partidaActiva);	
+				partidaEnCurso(partidaActiva);
 			break;	
 			case "2":
 				JOptionPane.showMessageDialog(null, "Partida reanudada");
