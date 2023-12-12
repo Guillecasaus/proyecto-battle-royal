@@ -8,6 +8,9 @@ public class Personaje {
 	public static final Integer MAX_VIDA_PERSONAJE = 100;
 	public static final Integer NUM_MAX_HERRAMIENTAS = 3;
 	public static final Integer NUM_INICIAL_HERRAMIENTAS = 0;
+	public static final Integer ATAQUE_NORMAL = 10;
+	public static final Integer ATAQUE_HABILIDAD = 30;
+	public static final Integer COOLDOWN_HABILIDAD = 4;
 	
 	private String nombre;
 	private Integer vidaPersonaje;
@@ -15,6 +18,13 @@ public class Personaje {
 	private TipoJugador tipoUser;
 	private Integer numeroHerramientas;
 	private TipoPersonaje tipoPer;
+	
+	//Daño de ataque normal, al que luego se aplica el bonus por arma equipada (daño final = ataqueNormal * bonus arma) 
+	protected Integer ataqueNormal;
+	//Daño hecho por la habilidad con cooldown (no dependiente de herramientas)
+	protected Integer ataqueHabilidad;
+	//Cooldown de la habilidad en cuestion (num turnos hasta que se puede usar otra vez)
+	protected Integer cooldownHabilidad;
 		
 	public Personaje(String nombre, TipoJugador tipoUser, TipoPersonaje tipoPer) {
 		this.nombre = nombre;
@@ -23,17 +33,48 @@ public class Personaje {
 		this.listaHerramientas = new ArrayList<Herramientas>();
 		this.numeroHerramientas = Personaje.NUM_INICIAL_HERRAMIENTAS;
 		this.tipoPer = tipoPer;
+		this.ataqueHabilidad = ATAQUE_HABILIDAD;
+		this.ataqueNormal = ATAQUE_NORMAL;
+		this.cooldownHabilidad = COOLDOWN_HABILIDAD;
 	}
 	
-	public Personaje(String nombre, TipoJugador tipoUser, Integer vida,  TipoPersonaje tipoPer) {
+	public Personaje(String nombre, TipoJugador tipoUser, Integer vida,  TipoPersonaje tipoPer, Integer ataqueNormal, Integer ataqueHabilidad, Integer cooldownHabilidad) {
 		this.nombre = nombre;
 		this.vidaPersonaje = vida;
 		this.tipoUser = tipoUser;
 		this.listaHerramientas = new ArrayList<Herramientas>();
 		this.numeroHerramientas = Personaje.NUM_INICIAL_HERRAMIENTAS;
 		this.tipoPer = tipoPer;
+		this.ataqueHabilidad = ataqueHabilidad;
+		this.ataqueNormal = ataqueNormal;
+		this.cooldownHabilidad = cooldownHabilidad;
 	}
 	
+	
+	public Integer getAtaqueNormal() {
+		return ataqueNormal;
+	}
+
+	public void setAtaqueNormal(Integer ataqueNormal) {
+		this.ataqueNormal = ataqueNormal;
+	}
+
+	public Integer getAtaqueHabilidad() {
+		return ataqueHabilidad;
+	}
+
+	public void setAtaqueHabilidad(Integer ataqueHabilidad) {
+		this.ataqueHabilidad = ataqueHabilidad;
+	}
+
+	public Integer getCooldownHabilidad() {
+		return cooldownHabilidad;
+	}
+
+	public void setCooldownHabilidad(Integer cooldownHabilidad) {
+		this.cooldownHabilidad = cooldownHabilidad;
+	}
+
 	public String getNombre() {
 		return nombre;
 	}

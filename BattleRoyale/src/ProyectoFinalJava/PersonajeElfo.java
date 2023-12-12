@@ -3,11 +3,14 @@ package ProyectoFinalJava;
 public class PersonajeElfo extends Personaje {
 
 	public static final Integer MAX_VIDA_ELFO = 110;
+	public static final Integer ATAQUE_NORMAL_ELFO = 20;
+	public static final Integer ATAQUE_HABILIDAD_ELFO = 60;
+	public static final Integer COOLDOWN_HABILIDAD_ELFO = 5;
 	
 	public PersonajeElfo(String nombre, TipoJugador tipo) {
-		super(nombre, tipo, PersonajeElfo.MAX_VIDA_ELFO, TipoPersonaje.elfo);
+		super(nombre, tipo, PersonajeElfo.MAX_VIDA_ELFO, TipoPersonaje.elfo, PersonajeElfo.ATAQUE_NORMAL_ELFO, PersonajeElfo.ATAQUE_HABILIDAD_ELFO, PersonajeElfo.COOLDOWN_HABILIDAD_ELFO);
 	}
-
+	
 	@Override 
 	public Integer habilidad() {
 		return 20;

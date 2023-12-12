@@ -44,7 +44,8 @@ public class Partida {
 	}
 
 	public Integer obtenerDamage(Integer posicionJugador) {
-		return this.listaPersonajes.get(posicionJugador).habilidad();
+		//TODO Añadir bonus por arma/herramienta (Multiplicar? Float vs int?) (Recalcular equilibrio daño)
+		return this.listaPersonajes.get(posicionJugador).getAtaqueNormal();
 	}
 	
 	public Integer quitarDamage(Integer posicionJugador ,Integer damage) {	

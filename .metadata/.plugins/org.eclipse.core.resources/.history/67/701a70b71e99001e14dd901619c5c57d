@@ -1,0 +1,20 @@
+package ProyectoFinalJava;
+
+public class PersonajeGuerrero extends Personaje {
+
+	public static final Integer MAX_VIDA_GUERRERO = 120;
+	
+	public PersonajeGuerrero(String nombre, TipoJugador tipo) {
+		super(nombre, tipo, PersonajeGuerrero.MAX_VIDA_GUERRERO, TipoPersonaje.guerrero);
+	}
+
+	@Override 
+	public Integer habilidad() {
+		return 15;
+	} 
+	
+	public Integer recuperarVida() {
+		return 10;
+	}
+
+}
