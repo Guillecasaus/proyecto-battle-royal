@@ -74,10 +74,6 @@ public class Menu {
 					int jugadorAtacado = Integer.parseInt(jugadoresDisponibles);
 					damage = partidaActual.obtenerDamage(numJugadorAtacante);
 					partidaActual.quitarDamage(jugadorAtacado, damage);
-					if (partidaActual.devolverVidaPersonaje(jugadorAtacado) <= 0) {
-						partidaActual.jugadorEliminado(jugadorAtacado);
-					}
-					
 				break;
 				case "2":
 					vida = partidaActual.obtenerVida(jugadorRecuperarVida);
@@ -91,7 +87,7 @@ public class Menu {
 				default:	
 					JOptionPane.showMessageDialog(null, "Valor introducido erróneo");
 			}
-		
+			
 			numTurnos ++;
 			partidaActual.mostrarPersonajes();
 		}while(numTurnos < Partida.MAX_TURNOS);

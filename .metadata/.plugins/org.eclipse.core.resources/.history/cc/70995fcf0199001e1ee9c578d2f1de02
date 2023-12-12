@@ -115,17 +115,4 @@ public class Personaje {
 			return 1;
 		}	
 	}
-
-	public void actualizarValoresPersonajeEliminado() {
-		Partida partida = new Partida();
-		
-		/*this.nombre = null;
-		this.vidaPersonaje = null;
-		this.listaHerramientas = null;
-		this.tipoUser = null;
-		this.numeroHerramientas = null;
-		this.tipoPer = null;*/
-		
-	}
-
 }
