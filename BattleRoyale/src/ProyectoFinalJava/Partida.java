@@ -43,9 +43,17 @@ public class Partida {
 		JOptionPane.showMessageDialog(null, texto);
 	}
 
+	public List<Personaje> getListaPersonajes() {
+		return listaPersonajes;
+	}
+
 	public Integer obtenerDamage(Integer posicionJugador) {
 		//TODO Añadir bonus por arma/herramienta (Multiplicar? Float vs int?) (Recalcular equilibrio daño)
 		return this.listaPersonajes.get(posicionJugador).getAtaqueNormal();
+	}
+	
+	public Integer obtenerDamageHabilidad(Integer posicionJugador) {
+		return this.listaPersonajes.get(posicionJugador).getAtaqueHabilidad();
 	}
 	
 	public Integer quitarDamage(Integer posicionJugador ,Integer damage) {	

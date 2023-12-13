@@ -19,6 +19,8 @@ public class Personaje {
 	private Integer numeroHerramientas;
 	private TipoPersonaje tipoPer;
 	
+	//TRUE si está esperando a acabar cooldown, FALSE si la habilidad está lista
+	protected Boolean estaEnCD;
 	//Daño de ataque normal, al que luego se aplica el bonus por arma equipada (daño final = ataqueNormal * bonus arma) 
 	protected Integer ataqueNormal;
 	//Daño hecho por la habilidad con cooldown (no dependiente de herramientas)
@@ -138,10 +140,11 @@ public class Personaje {
 		return vida;
 	}
 	
+	/*
 	public Integer habilidad() {
 		return 1;
 	}
-
+	*/
 	public Integer recuperarVida() {
 		return 1;
 	}

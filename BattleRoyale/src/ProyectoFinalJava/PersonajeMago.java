@@ -11,11 +11,12 @@ public class PersonajeMago extends Personaje {
 		super(nombre, tipo, PersonajeMago.MAX_VIDA_MAGO, TipoPersonaje.mago, PersonajeMago.ATAQUE_NORMAL_MAGO, PersonajeMago.ATAQUE_HABILIDAD_MAGO, PersonajeMago.COOLDOWN_HABILIDAD_MAGO);
 	}
 
+	/*
 	@Override 
 	public Integer habilidad() {
 		return 40;
 	} 
-	
+	*/
 	public Integer recuperarVida() {
 		return 10;
 	}

@@ -11,11 +11,12 @@ public class PersonajeGuerrero extends Personaje {
 		super(nombre, tipo, PersonajeGuerrero.MAX_VIDA_GUERRERO, TipoPersonaje.guerrero, PersonajeGuerrero.ATAQUE_NORMAL_GUERRERO, PersonajeGuerrero.ATAQUE_HABILIDAD_GUERRERO, PersonajeGuerrero.COOLDOWN_HABILIDAD_GUERRERO);
 	}
 	
+	/*
 	@Override 
 	public Integer habilidad() {
 		return 15;
 	} 
-	
+	*/
 	public Integer recuperarVida() {
 		return 10;
 	}

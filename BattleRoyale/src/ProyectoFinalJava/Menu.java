@@ -66,7 +66,7 @@ public class Menu {
 			numJugadorAtacante = numTurnos % Partida.NUM_MAX_JUGADORES;
 			jugadorRecuperarVida = numTurnos % Partida.NUM_MAX_JUGADORES;
 			
-			menuPartida = JOptionPane.showInputDialog("Turno: " + numTurnos + "\nJugador Numero: " + numJugadorAtacante +"\n1. Atacar \n2. Recuperar Vida \n3 Coger Objeto");
+			menuPartida = JOptionPane.showInputDialog("Turno: " + numTurnos + "\nJugador Numero: " + numJugadorAtacante +"\n1. Atacar \n2. Recuperar Vida \n3 Coger Objeto \n4. Usar Habilidad de Ataque");
 			
 			switch (menuPartida) {
 				case "1":
@@ -87,12 +87,29 @@ public class Menu {
 				case "3":
 					
 				break;	
+				case "4":
+					if (partidaActual.getListaPersonajes().get(numJugadorAtacante).estaEnCD == false) {
+						jugadoresDisponibles = JOptionPane.showInputDialog("Contra que jugador quieres usar la habilidad: ");
+						jugadorAtacado = Integer.parseInt(jugadoresDisponibles);
+						damage = partidaActual.obtenerDamageHabilidad(numJugadorAtacante);
+						partidaActual.quitarDamage(jugadorAtacado, damage);
+						if (partidaActual.devolverVidaPersonaje(jugadorAtacado) <= 0) {
+							partidaActual.jugadorEliminado(jugadorAtacado);
+						}
+						partidaActual.getListaPersonajes().get(numJugadorAtacante).estaEnCD = true;
+					} else {
+						//TODO Volver al inicio
+						JOptionPane.showMessageDialog(null, "La habilidad no está disponible"); //TODO Poner cuantos turnos faltan 
+					}
+					
+				break;
 				
 				default:	
 					JOptionPane.showMessageDialog(null, "Valor introducido erróneo");
 			}
 		
 			numTurnos ++;
+			//Recorrer todos los personajes, cambiando valor cd
 			partidaActual.mostrarPersonajes();
 		}while(numTurnos < Partida.MAX_TURNOS);
 	}

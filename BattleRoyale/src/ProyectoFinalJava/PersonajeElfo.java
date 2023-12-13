@@ -11,11 +11,12 @@ public class PersonajeElfo extends Personaje {
 		super(nombre, tipo, PersonajeElfo.MAX_VIDA_ELFO, TipoPersonaje.elfo, PersonajeElfo.ATAQUE_NORMAL_ELFO, PersonajeElfo.ATAQUE_HABILIDAD_ELFO, PersonajeElfo.COOLDOWN_HABILIDAD_ELFO);
 	}
 	
+	/*
 	@Override 
 	public Integer habilidad() {
 		return 20;
 	}  
-
+	*/
 	public Integer recuperarVida() {
 		return 10;
 	}
