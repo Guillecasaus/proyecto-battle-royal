@@ -15,7 +15,7 @@ public class Menu {
 				switch(tipoJugador) {
 					case "1":
 						nombreJugador = JOptionPane.showInputDialog("Personaje número: " + (numJugadores + 1) + ", Nombre: ");
-						PersonajeMago mago = new PersonajeMago(nombreJugador, TipoJugador.humano);							
+						PersonajeMago mago = new PersonajeMago(nombreJugador, TipoJugador.humano, numJugadores + 1);							
 						partidaActual.nuevoPersonaje(mago);
 						mago.asignarHerramienta(new HerramientaBaston("baston"));
 					break;	
@@ -109,6 +109,9 @@ public class Menu {
 			}
 		
 			numTurnos ++;
+			//funcion ganador
+			
+			
 			//Recorrer todos los personajes, cambiando valor cd
 			partidaActual.mostrarPersonajes();
 		}while(numTurnos < Partida.MAX_TURNOS);
