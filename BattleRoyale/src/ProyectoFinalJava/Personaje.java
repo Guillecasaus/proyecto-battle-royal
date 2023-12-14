@@ -3,6 +3,8 @@ package ProyectoFinalJava;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 public class Personaje {
 
 	public static final Integer MAX_VIDA_PERSONAJE = 100;
@@ -189,6 +191,16 @@ public class Personaje {
 			this.numeroHerramientas ++;	
 			return 1;
 		}	
+	}
+	
+	public void mostrarInventarioHerramientas() {
+		String texto = "";
+	
+		for(int i=0; i < this.listaHerramientas.size(); i++) {
+			System.out.println("Herramienta " + i + ": "+ this.listaHerramientas.get(i).getTipo() + ". Bonus: " + this.listaHerramientas.get(i).getBonus() + ". Usos restantes: " + this.listaHerramientas.get(i).getUsosRestantes());
+			texto = texto + "Herramienta " + i + ": "+ this.listaHerramientas.get(i).getTipo() + ". Bonus: " + this.listaHerramientas.get(i).getBonus() + ". Usos restantes: " + this.listaHerramientas.get(i).getUsosRestantes() + "\n";
+		}
+		JOptionPane.showMessageDialog(null, texto);
 	}
 
 	public void actualizarValoresPersonajeEliminado() {

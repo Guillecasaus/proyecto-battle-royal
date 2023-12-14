@@ -59,35 +59,54 @@ public class Menu {
 		Integer numJugadorAtacante;
 		Integer jugadorRecuperarVida;
 		String menuPartida;
+		String menuAtaque;
+		String menuHerramientaAtaque;
 		Integer damage;
 		Integer vida;
+		String jugadoresDisponibles;
+		Integer jugadorAtacado;
 		
 		do{
 			numJugadorAtacante = numTurnos % Partida.NUM_MAX_JUGADORES;
 			jugadorRecuperarVida = numTurnos % Partida.NUM_MAX_JUGADORES;
 			
-			menuPartida = JOptionPane.showInputDialog("Turno: " + numTurnos + "\nJugador Numero: " + numJugadorAtacante +"\n1. Atacar \n2. Recuperar Vida \n3 Coger Objeto \n4. Usar Habilidad de Ataque");
+			menuPartida = JOptionPane.showInputDialog("Turno: " + numTurnos + "\nJugador Numero: " + numJugadorAtacante +"\n1. Atacar \n2. Usar Habilidad Ofensiva \n3 Coger Objeto \n4. Recuperar Vida");
 			
 			switch (menuPartida) {
 				case "1":
-					String jugadoresDisponibles = JOptionPane.showInputDialog("A que jugador quieres atacar: ");
-					int jugadorAtacado = Integer.parseInt(jugadoresDisponibles);
-					damage = partidaActual.obtenerDamage(numJugadorAtacante);
-					partidaActual.quitarDamage(jugadorAtacado, damage);
-					if (partidaActual.devolverVidaPersonaje(jugadorAtacado) <= 0) {
-						partidaActual.jugadorEliminado(jugadorAtacado);
+					menuAtaque = JOptionPane.showInputDialog("Turno: " + numTurnos + "\nJugador Numero: " + numJugadorAtacante +"\n1. Ataque Normal \n2. Usar Herramienta");
+					switch (menuAtaque) {
+						case "1":
+							jugadoresDisponibles = JOptionPane.showInputDialog("A que jugador quieres atacar: ");
+							jugadorAtacado = Integer.parseInt(jugadoresDisponibles);	
+							damage = partidaActual.obtenerDamage(numJugadorAtacante);
+							partidaActual.quitarDamage(jugadorAtacado, damage);
+							if (partidaActual.devolverVidaPersonaje(jugadorAtacado) <= 0) {
+								partidaActual.jugadorEliminado(jugadorAtacado);
+							}
+						break;
+						case "2":
+							partidaActual.getListaPersonajes().get(numJugadorAtacante).mostrarInventarioHerramientas();
+							menuHerramientaAtaque = JOptionPane.showInputDialog("Turno: " + numTurnos + "\nJugador Numero: " + numJugadorAtacante +"\n Introduzca numero de la herramienta deseada: ");
+							if (Integer.valueOf(menuHerramientaAtaque) <= partidaActual.getListaPersonajes().get(numJugadorAtacante).getListaHerramientas().size()) {
+								//Buscar herramienta
+								damage = partidaActual.obtenerDamage(numJugadorAtacante) + partidaActual.getListaPersonajes().get(numJugadorAtacante).getListaHerramientas().get(Integer.valueOf(menuHerramientaAtaque)).getBonus();
+								
+							} else {
+								JOptionPane.showMessageDialog(null, "No tiene ninguna herramienta en esta posicion de inventario");
+								damage = partidaActual.obtenerDamage(numJugadorAtacante);
+								//TODO Volver a inicio
+							}
+							jugadoresDisponibles = JOptionPane.showInputDialog("A que jugador quieres atacar: ");
+							jugadorAtacado = Integer.parseInt(jugadoresDisponibles);	
+							partidaActual.quitarDamage(jugadorAtacado, damage);
+							if (partidaActual.devolverVidaPersonaje(jugadorAtacado) <= 0) {
+								partidaActual.jugadorEliminado(jugadorAtacado);
+							}
+						break;
 					}
-					
 				break;
 				case "2":
-					vida = partidaActual.obtenerVida(jugadorRecuperarVida);
-					partidaActual.recuperarVida(jugadorRecuperarVida, vida);
-					
-				break;	
-				case "3":
-					
-				break;	
-				case "4":
 					if (partidaActual.getListaPersonajes().get(numJugadorAtacante).estaEnCD == false) {
 						jugadoresDisponibles = JOptionPane.showInputDialog("Contra que jugador quieres usar la habilidad: ");
 						jugadorAtacado = Integer.parseInt(jugadoresDisponibles);
@@ -102,7 +121,13 @@ public class Menu {
 						//TODO Volver al inicio
 						JOptionPane.showMessageDialog(null, "La habilidad no está disponible"); //TODO Poner cuantos turnos faltan 
 					}
+				break;	
+				case "3":
 					
+				break;	
+				case "4":
+					vida = partidaActual.obtenerVida(jugadorRecuperarVida);
+					partidaActual.recuperarVida(jugadorRecuperarVida, vida);
 				break;
 				
 				default:	

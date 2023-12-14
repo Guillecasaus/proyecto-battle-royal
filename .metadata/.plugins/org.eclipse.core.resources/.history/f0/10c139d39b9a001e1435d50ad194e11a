@@ -1,0 +1,12 @@
+package ProyectoFinalJava;
+
+public class HerramientaEspada extends Herramientas{
+	public static final Double ESPADA_BONUS = 2.0;
+	public static final Integer USOS = 3;
+	private Integer usosRestantes;
+	
+	public HerramientaEspada(String nombre) {
+		super(nombre, ESPADA_BONUS, TipoArma.espada);
+		this.usosRestantes = HerramientaEspada.USOS;
+	}
+}
