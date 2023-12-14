@@ -21,6 +21,8 @@ public class Personaje {
 	
 	//TRUE si está esperando a acabar cooldown, FALSE si la habilidad está lista
 	protected Boolean estaEnCD;
+	//Contador cooldown. Empieza en 0 y pasa a un numero especificado tras usarse la habilidad
+	protected Integer counterCD;
 	//Daño de ataque normal, al que luego se aplica el bonus por arma equipada (daño final = ataqueNormal * bonus arma) 
 	protected Integer ataqueNormal;
 	//Daño hecho por la habilidad con cooldown (no dependiente de herramientas)
@@ -38,6 +40,7 @@ public class Personaje {
 		this.ataqueHabilidad = ATAQUE_HABILIDAD;
 		this.ataqueNormal = ATAQUE_NORMAL;
 		this.cooldownHabilidad = COOLDOWN_HABILIDAD;
+		this.counterCD = 0;
 	}
 	
 	public Personaje(String nombre, TipoJugador tipoUser, Integer vida,  TipoPersonaje tipoPer, Integer ataqueNormal, Integer ataqueHabilidad, Integer cooldownHabilidad) {
@@ -52,7 +55,14 @@ public class Personaje {
 		this.cooldownHabilidad = cooldownHabilidad;
 	}
 	
-	
+	public Integer getCounterCD() {
+		return counterCD;
+	}
+
+	public void setCounterCD(Integer counterCD) {
+		this.counterCD = counterCD;
+	}
+
 	public Integer getAtaqueNormal() {
 		return ataqueNormal;
 	}
@@ -122,6 +132,20 @@ public class Personaje {
 		return "Personaje [nombre=" + nombre + ", vidaPersonaje=" + vidaPersonaje + ", listaHerramientas="
 				+ listaHerramientas + ", tipoUser=" + tipoUser + ", numeroHerramientas=" + numeroHerramientas + ", tipoPer="
 				+ tipoPer + "]";
+	}
+	
+	//Funcion que se llama para cada personaje al final de su turno
+	public void controlCD() {
+		//Si el cd es mas que 0, se baja 1 
+		if (this.counterCD > 0) {
+			this.counterCD--;
+		}
+		//Una vez modificado, se ve si ha acabado justo su cd
+		if (this.counterCD == 0) {
+			this.estaEnCD = false;
+		} else {
+			this.estaEnCD = true;
+		}
 	}
 
 	public Integer quitarVida(Integer damage) {

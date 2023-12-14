@@ -97,6 +97,7 @@ public class Menu {
 							partidaActual.jugadorEliminado(jugadorAtacado);
 						}
 						partidaActual.getListaPersonajes().get(numJugadorAtacante).estaEnCD = true;
+						partidaActual.getListaPersonajes().get(numJugadorAtacante).setCounterCD(partidaActual.getListaPersonajes().get(numJugadorAtacante).getCooldownHabilidad()+1);
 					} else {
 						//TODO Volver al inicio
 						JOptionPane.showMessageDialog(null, "La habilidad no está disponible"); //TODO Poner cuantos turnos faltan 
@@ -111,8 +112,9 @@ public class Menu {
 			numTurnos ++;
 			//funcion ganador
 			
+			//Cambiar valor CD personaje que ha jugado
+			partidaActual.getListaPersonajes().get(numJugadorAtacante).controlCD();
 			
-			//Recorrer todos los personajes, cambiando valor cd
 			partidaActual.mostrarPersonajes();
 		}while(numTurnos < Partida.MAX_TURNOS);
 	}
