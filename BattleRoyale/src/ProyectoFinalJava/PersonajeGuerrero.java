@@ -7,8 +7,8 @@ public class PersonajeGuerrero extends Personaje {
 	public static final Integer ATAQUE_HABILIDAD_GUERRERO = 40;
 	public static final Integer COOLDOWN_HABILIDAD_GUERRERO = 3;
 	
-	public PersonajeGuerrero(String nombre, TipoJugador tipo) {
-		super(nombre, tipo, PersonajeGuerrero.MAX_VIDA_GUERRERO, TipoPersonaje.guerrero, PersonajeGuerrero.ATAQUE_NORMAL_GUERRERO, PersonajeGuerrero.ATAQUE_HABILIDAD_GUERRERO, PersonajeGuerrero.COOLDOWN_HABILIDAD_GUERRERO);
+	public PersonajeGuerrero(String nombre, TipoJugador tipo, Integer numeroJugador) {
+		super(nombre, tipo, PersonajeGuerrero.MAX_VIDA_GUERRERO, TipoPersonaje.guerrero, PersonajeGuerrero.ATAQUE_NORMAL_GUERRERO, PersonajeGuerrero.ATAQUE_HABILIDAD_GUERRERO, PersonajeGuerrero.COOLDOWN_HABILIDAD_GUERRERO, numeroJugador);
 	}
 	
 	/*

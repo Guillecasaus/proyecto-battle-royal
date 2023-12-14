@@ -21,13 +21,13 @@ public class Menu {
 					break;	
 					case "2":
 						nombreJugador = JOptionPane.showInputDialog("Personaje número: " + (numJugadores + 1) + ", Nombre: ");
-						PersonajeGuerrero guerrero = new PersonajeGuerrero(nombreJugador, TipoJugador.humano);
+						PersonajeGuerrero guerrero = new PersonajeGuerrero(nombreJugador, TipoJugador.humano, numJugadores + 1);
 						partidaActual.nuevoPersonaje(guerrero);
 						guerrero.asignarHerramienta(new HerramientaBaston("baston"));
 					break;	
 					case "3":
 						nombreJugador = JOptionPane.showInputDialog("Personaje número: " + (numJugadores + 1) + ", Nombre: ");
-						PersonajeElfo elfo = new PersonajeElfo(nombreJugador, TipoJugador.humano);
+						PersonajeElfo elfo = new PersonajeElfo(nombreJugador, TipoJugador.humano, numJugadores + 1);
 						partidaActual.nuevoPersonaje(elfo);
 						elfo.asignarHerramienta(new HerramientaBaston("baston"));
 					break;
@@ -35,7 +35,7 @@ public class Menu {
 					
 						for(int i=numJugadores; i<Partida.NUM_MAX_JUGADORES; i++) {
 							nombreMaquina = "jugadorMaquina" + i;
-							PersonajeGuerrero guerreroMaquina = new PersonajeGuerrero(nombreMaquina, TipoJugador.maquina);
+							PersonajeGuerrero guerreroMaquina = new PersonajeGuerrero(nombreMaquina, TipoJugador.maquina, numJugadores + 1);
 							partidaActual.nuevoPersonaje(guerreroMaquina);
 							guerreroMaquina.asignarHerramienta(new HerramientaBaston("baston"));
 						}
@@ -110,7 +110,11 @@ public class Menu {
 			}
 		
 			numTurnos ++;
-			//funcion ganador
+			
+			if(partidaActual.jugadoresDisponibles() == 1) {
+				JOptionPane.showMessageDialog(null, "El jugador: " + numJugadorAtacante + " es el ganador");
+				numTurnos = Partida.MAX_TURNOS;
+			}
 			
 			//Cambiar valor CD personaje que ha jugado
 			partidaActual.getListaPersonajes().get(numJugadorAtacante).controlCD();

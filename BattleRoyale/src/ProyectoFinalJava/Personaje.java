@@ -18,6 +18,7 @@ public class Personaje {
 	private TipoJugador tipoUser;
 	private Integer numeroHerramientas;
 	private TipoPersonaje tipoPer;
+	private Integer numeroJugador;
 	
 	//TRUE si está esperando a acabar cooldown, FALSE si la habilidad está lista
 	protected Boolean estaEnCD;
@@ -30,7 +31,7 @@ public class Personaje {
 	//Cooldown de la habilidad en cuestion (num turnos hasta que se puede usar otra vez)
 	protected Integer cooldownHabilidad;
 		
-	public Personaje(String nombre, TipoJugador tipoUser, TipoPersonaje tipoPer) {
+	public Personaje(String nombre, TipoJugador tipoUser, TipoPersonaje tipoPer, Integer numeroJugador) {
 		this.nombre = nombre;
 		this.vidaPersonaje = Personaje.MAX_VIDA_PERSONAJE;
 		this.tipoUser = tipoUser;
@@ -41,9 +42,10 @@ public class Personaje {
 		this.ataqueNormal = ATAQUE_NORMAL;
 		this.cooldownHabilidad = COOLDOWN_HABILIDAD;
 		this.counterCD = 0;
+		this.numeroJugador = numeroJugador;
 	}
 	
-	public Personaje(String nombre, TipoJugador tipoUser, Integer vida,  TipoPersonaje tipoPer, Integer ataqueNormal, Integer ataqueHabilidad, Integer cooldownHabilidad) {
+	public Personaje(String nombre, TipoJugador tipoUser, Integer vida,  TipoPersonaje tipoPer, Integer ataqueNormal, Integer ataqueHabilidad, Integer cooldownHabilidad, Integer numeroJugador) {
 		this.nombre = nombre;
 		this.vidaPersonaje = vida;
 		this.tipoUser = tipoUser;
@@ -53,6 +55,7 @@ public class Personaje {
 		this.ataqueHabilidad = ataqueHabilidad;
 		this.ataqueNormal = ataqueNormal;
 		this.cooldownHabilidad = cooldownHabilidad;
+		this.numeroJugador = numeroJugador;
 	}
 	
 	public Integer getCounterCD() {
