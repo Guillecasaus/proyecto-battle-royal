@@ -43,6 +43,8 @@ public class Personaje {
 		this.cooldownHabilidad = COOLDOWN_HABILIDAD;
 		this.counterCD = 0;
 		this.numeroJugador = numeroJugador;
+		this.estaEnCD = false;
+		
 	}
 	
 	public Personaje(String nombre, TipoJugador tipoUser, Integer vida,  TipoPersonaje tipoPer, Integer ataqueNormal, Integer ataqueHabilidad, Integer cooldownHabilidad, Integer numeroJugador) {
@@ -55,7 +57,9 @@ public class Personaje {
 		this.ataqueHabilidad = ataqueHabilidad;
 		this.ataqueNormal = ataqueNormal;
 		this.cooldownHabilidad = cooldownHabilidad;
+		this.counterCD = 0;
 		this.numeroJugador = numeroJugador;
+		this.estaEnCD = false;
 	}
 	
 	public Integer getCounterCD() {
