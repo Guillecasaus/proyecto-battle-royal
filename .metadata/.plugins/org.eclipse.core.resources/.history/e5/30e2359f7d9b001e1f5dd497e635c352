@@ -44,5 +44,7 @@ public class Herramientas {
 	public void setUsosRestantes(Integer usosRestantes) {
 		this.usosRestantes = usosRestantes;
 	}
+
+	
 	
 }
