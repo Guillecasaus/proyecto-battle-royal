@@ -136,6 +136,14 @@ public class Personaje {
 		this.tipoPer = tipoPer;
 	}
 	
+	public Integer getNumeroJugador() {
+		return numeroJugador;
+	}
+
+	public void setNumeroJugador(Integer numeroJugador) {
+		this.numeroJugador = numeroJugador;
+	}
+
 	@Override
 	public String toString() {
 		return "Personaje [nombre=" + nombre + ", vidaPersonaje=" + vidaPersonaje + ", listaHerramientas="

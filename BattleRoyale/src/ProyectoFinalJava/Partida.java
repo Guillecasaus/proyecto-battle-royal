@@ -37,10 +37,23 @@ public class Partida {
 		String texto = "";
 	
 		for(int i=0; i < this.listaPersonajes.size(); i++) {
-			System.out.println("Posicion: " + i + " Nombre Personaje: "+ this.listaPersonajes.get(i).getNombre() + " Tipo de personje: " + this.listaPersonajes.get(i).getTipoPer() + " Vida personaje: " + this.listaPersonajes.get(i).getVidaPersonaje());
-			texto = texto + "Posicion: " + i + " Nombre Personaje: "+ this.listaPersonajes.get(i).getNombre() + " Tipo de personje: " + this.listaPersonajes.get(i).getTipoPer() + " Vida personaje: " + this.listaPersonajes.get(i).getVidaPersonaje() + "\n";
+			System.out.println("Numero Jugador: " + this.listaPersonajes.get(i).getNumeroJugador() + " Nombre Personaje: "+ this.listaPersonajes.get(i).getNombre() + " Tipo de personje: " + this.listaPersonajes.get(i).getTipoPer() + " Vida personaje: " + this.listaPersonajes.get(i).getVidaPersonaje());
+			texto = texto + "Numero Jugador: " + this.listaPersonajes.get(i).getNumeroJugador() + " Nombre Personaje: "+ this.listaPersonajes.get(i).getNombre() + " Tipo de personje: " + this.listaPersonajes.get(i).getTipoPer() + " Vida personaje: " + this.listaPersonajes.get(i).getVidaPersonaje() + "\n";
 		}
 		JOptionPane.showMessageDialog(null, texto);
+	}
+	
+	public String textoPersonajes() {
+		/*for(Personaje personajes : this.listaPersonajes) {
+			System.out.println("El personaje nombre : "+ personajes.getNombre());
+		}*/
+		
+		String texto = "";
+	
+		for(int i=0; i < this.listaPersonajes.size(); i++) {
+			texto = texto + "Numero Jugador: " + this.listaPersonajes.get(i).getNumeroJugador() + " Nombre Personaje: "+ this.listaPersonajes.get(i).getNombre() + " Tipo de personje: " + this.listaPersonajes.get(i).getTipoPer() + " Vida personaje: " + this.listaPersonajes.get(i).getVidaPersonaje() + "\n";
+		}
+		return texto;
 	}
 
 	public List<Personaje> getListaPersonajes() {
@@ -72,7 +85,7 @@ public class Partida {
 		return this.listaPersonajes.get(posicionJugador).getVidaPersonaje();
 	}
 	
-	public String devolverListaPersonajes (Integer posicionJugador) {
+	public String devolverListaPersonajes(Integer posicionJugador) {
 		return this.listaPersonajes.get(posicionJugador).getNombre();
 	}
 
@@ -85,4 +98,21 @@ public class Partida {
 		return this.listaPersonajes.size();
 	}
 	
+	public Integer devolverPosicionJugador(Integer numeroJugador) {
+		for(int i = 0 ; i < this.jugadoresDisponibles(); i++) {
+			if(numeroJugador == this.listaPersonajes.get(i).getNumeroJugador()) {
+				return i;
+			} 					
+		}
+		return -1;
+	}
+	
+	public Integer devolverNumeroJugador(Integer posicionJugador) {
+		return this.listaPersonajes.get(posicionJugador).getNumeroJugador();
+	}
+	
+	public String devolverNombreJugador(Integer posicionJugador) {
+		return this.listaPersonajes.get(posicionJugador).getNombre();
+	}
+
 }
