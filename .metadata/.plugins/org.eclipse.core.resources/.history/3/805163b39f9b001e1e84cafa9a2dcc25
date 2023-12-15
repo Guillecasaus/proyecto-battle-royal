@@ -151,14 +151,6 @@ public class Personaje {
 		this.numeroJugador = numeroJugador;
 	}
 	
-	public Integer getCounterCDHerramienta() {
-		return counterCDHerramienta;
-	}
-
-	public void setCounterCDHerramienta(Integer counterCDHerramienta) {
-		this.counterCDHerramienta = counterCDHerramienta;
-	}
-
 	@Override
 	public String toString() {
 		return "Personaje [nombre=" + nombre + ", vidaPersonaje=" + vidaPersonaje + ", listaHerramientas="
@@ -180,20 +172,6 @@ public class Personaje {
 		}
 	}
 
-	//Funcion que se llama para cada personaje al final de su turno
-	public void controlCDHerramienta() {
-		//Si el cd es mas que 0, se baja 1 
-		if (this.counterCDHerramienta > 0) {
-			this.counterCDHerramienta--;
-		}
-		//Una vez modificado, se ve si ha acabado justo su cd
-		if (this.counterCDHerramienta == 0) {
-			this.estaCDHerramienta = false;
-		} else {
-			this.estaCDHerramienta = true;
-		}
-	}
-		
 	public Integer quitarVida(Integer damage) {
 		Integer vida;		
 		vida = this.getVidaPersonaje() - damage;

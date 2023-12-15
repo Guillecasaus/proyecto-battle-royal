@@ -32,10 +32,6 @@ public class Personaje {
 	protected Integer ataqueHabilidad;
 	//Cooldown de la habilidad en cuestion (num turnos hasta que se puede usar otra vez)
 	protected Integer cooldownHabilidad;
-	
-	//Boolean y contador cooldown para obtener herramientas
-	protected Boolean estaCDHerramienta;
-	protected Integer counterCDHerramienta;
 		
 	public Personaje(String nombre, TipoJugador tipoUser, TipoPersonaje tipoPer, Integer numeroJugador) {
 		this.nombre = nombre;
@@ -50,8 +46,6 @@ public class Personaje {
 		this.counterCD = 0;
 		this.numeroJugador = numeroJugador;
 		this.estaEnCD = false;
-		this.estaCDHerramienta = false;
-		this.counterCDHerramienta = 0;
 		
 	}
 	
@@ -68,8 +62,6 @@ public class Personaje {
 		this.counterCD = 0;
 		this.numeroJugador = numeroJugador;
 		this.estaEnCD = false;
-		this.estaCDHerramienta = false;
-		this.counterCDHerramienta = 0;
 	}
 	
 	public Integer getCounterCD() {
@@ -151,14 +143,6 @@ public class Personaje {
 		this.numeroJugador = numeroJugador;
 	}
 	
-	public Integer getCounterCDHerramienta() {
-		return counterCDHerramienta;
-	}
-
-	public void setCounterCDHerramienta(Integer counterCDHerramienta) {
-		this.counterCDHerramienta = counterCDHerramienta;
-	}
-
 	@Override
 	public String toString() {
 		return "Personaje [nombre=" + nombre + ", vidaPersonaje=" + vidaPersonaje + ", listaHerramientas="
@@ -180,20 +164,6 @@ public class Personaje {
 		}
 	}
 
-	//Funcion que se llama para cada personaje al final de su turno
-	public void controlCDHerramienta() {
-		//Si el cd es mas que 0, se baja 1 
-		if (this.counterCDHerramienta > 0) {
-			this.counterCDHerramienta--;
-		}
-		//Una vez modificado, se ve si ha acabado justo su cd
-		if (this.counterCDHerramienta == 0) {
-			this.estaCDHerramienta = false;
-		} else {
-			this.estaCDHerramienta = true;
-		}
-	}
-		
 	public Integer quitarVida(Integer damage) {
 		Integer vida;		
 		vida = this.getVidaPersonaje() - damage;
