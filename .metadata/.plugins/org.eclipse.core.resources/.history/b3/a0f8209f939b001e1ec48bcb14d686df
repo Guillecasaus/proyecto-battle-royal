@@ -98,20 +98,4 @@ public class Partida {
 		return this.listaPersonajes.size();
 	}
 	
-	public Integer devolverPosicionJugador(Integer numeroJugador) {
-		for(int i = 0 ; i < this.jugadoresDisponibles(); i++) {
-			if(numeroJugador == this.listaPersonajes.get(i).getNumeroJugador()) {
-				return i;
-			} 					
-		}
-		return -1;
-	}
-	
-	public Integer devolverNumeroJugador(Integer posicionJugador) {
-		return this.listaPersonajes.get(posicionJugador).getNumeroJugador();
-	}
-	
-	public String devolverNombreJugador(Integer posicionJugador) {
-		return this.listaPersonajes.get(posicionJugador).getNombre();
-	}
 }

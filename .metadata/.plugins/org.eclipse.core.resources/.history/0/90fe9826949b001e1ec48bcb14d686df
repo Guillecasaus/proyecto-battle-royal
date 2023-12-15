@@ -87,10 +87,10 @@ public class Menu {
 						case "2":
 							partidaActual.getListaPersonajes().get(numJugadorAtacante).mostrarInventarioHerramientas();
 							menuHerramientaAtaque = JOptionPane.showInputDialog("Turno: " + numTurnos + "\nJugador Numero: " + partidaActual.devolverNumeroJugador(numJugadorAtacante) + "\n Introduzca numero de la herramienta deseada: ");
-							if (Integer.valueOf(menuHerramientaAtaque) <= partidaActual.getListaPersonajes().get(numJugadorAtacante).getListaHerramientas().size() && partidaActual.getListaPersonajes().get(numJugadorAtacante).getListaHerramientas().size() != 0) {
+							if (Integer.valueOf(menuHerramientaAtaque) <= partidaActual.getListaPersonajes().get(numJugadorAtacante).getListaHerramientas().size()) {
 								//Buscar herramienta
 								damage = partidaActual.obtenerDamage(numJugadorAtacante) + partidaActual.getListaPersonajes().get(numJugadorAtacante).getListaHerramientas().get(Integer.valueOf(menuHerramientaAtaque)).getBonus();
-								partidaActual.getListaPersonajes().get(numJugadorAtacante).controlHerramientaUsada(Integer.valueOf(menuHerramientaAtaque));
+								
 							} else {
 								JOptionPane.showMessageDialog(null, "No tiene ninguna herramienta en esta posicion de inventario");
 								damage = partidaActual.obtenerDamage(numJugadorAtacante);

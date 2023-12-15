@@ -135,13 +135,6 @@ public class Personaje {
 	public void setTipoPer(TipoPersonaje tipoPer) {
 		this.tipoPer = tipoPer;
 	}
-	public Integer getNumeroJugador() {
-		return numeroJugador;
-	}
-
-	public void setNumeroJugador(Integer numeroJugador) {
-		this.numeroJugador = numeroJugador;
-	}
 	
 	@Override
 	public String toString() {
@@ -208,15 +201,6 @@ public class Personaje {
 			texto = texto + "Herramienta " + i + ": "+ this.listaHerramientas.get(i).getTipo() + ". Bonus: " + this.listaHerramientas.get(i).getBonus() + ". Usos restantes: " + this.listaHerramientas.get(i).getUsosRestantes() + "\n";
 		}
 		JOptionPane.showMessageDialog(null, texto);
-	}
-	
-	public void controlHerramientaUsada(Integer numHerramienta) {
-		//Quitar 1 uso a herramienta indicada
-		this.listaHerramientas.get(numHerramienta).setUsosRestantes(this.listaHerramientas.get(numHerramienta).getUsosRestantes()-1);
-		//Comprobar si quedan usos, quitar herramienta de inventario si no quedan
-		if(this.listaHerramientas.get(numHerramienta).getUsosRestantes() == 0) {
-			this.listaHerramientas.remove(this.listaHerramientas.get(numHerramienta));
-		}
 	}
 
 	public void actualizarValoresPersonajeEliminado() {

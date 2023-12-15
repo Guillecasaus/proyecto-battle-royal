@@ -209,15 +209,6 @@ public class Personaje {
 		}
 		JOptionPane.showMessageDialog(null, texto);
 	}
-	
-	public void controlHerramientaUsada(Integer numHerramienta) {
-		//Quitar 1 uso a herramienta indicada
-		this.listaHerramientas.get(numHerramienta).setUsosRestantes(this.listaHerramientas.get(numHerramienta).getUsosRestantes()-1);
-		//Comprobar si quedan usos, quitar herramienta de inventario si no quedan
-		if(this.listaHerramientas.get(numHerramienta).getUsosRestantes() == 0) {
-			this.listaHerramientas.remove(this.listaHerramientas.get(numHerramienta));
-		}
-	}
 
 	public void actualizarValoresPersonajeEliminado() {
 		Partida partida = new Partida();
