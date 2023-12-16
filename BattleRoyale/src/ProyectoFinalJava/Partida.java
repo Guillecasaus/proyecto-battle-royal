@@ -6,7 +6,7 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 public class Partida {
-
+	public static final Integer TURNOS_CD_ESCOGER_HERRAMIENTA = 4;
 	public static final Integer TURNO_INICIAL = 0;
 	public static final Integer NUM_MAX_JUGADORES = 3;
 	public static final Integer NUM_INICIAL_JUGADORES = 0;
@@ -115,8 +115,8 @@ public class Partida {
 		return this.listaPersonajes.get(posicionJugador).getNombre();
 	}
 	
-	public void mostrarHerramientasDisponibles() {
-		String texto = "Herramientas disponibles: \n\n";
+	public String textoHerramientasDisponibles() {
+		String texto = "";
 		Integer positionList = 0;
 	
 		for(TipoArma tipo : TipoArma.values()) {
@@ -124,7 +124,7 @@ public class Partida {
 			texto = texto + positionList + ": Herramienta " + tipo + "\n";
 			positionList++;
 		}
-		JOptionPane.showMessageDialog(null, texto);
+		return texto;
 	}	
 
 	public String mostrarTextoHerramientasDisponibles() {

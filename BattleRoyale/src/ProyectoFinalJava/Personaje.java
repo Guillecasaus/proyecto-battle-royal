@@ -234,13 +234,23 @@ public class Personaje {
 		String texto = "Herramientas en el inventario: \n\n";
 	
 		for(int i=0; i < this.listaHerramientas.size(); i++) {
-			System.out.println("Herramienta " + i + ": "+ this.listaHerramientas.get(i).getTipo() + ". Bonus: " + this.listaHerramientas.get(i).getBonus() + ". Usos restantes: " + this.listaHerramientas.get(i).getUsosRestantes());
-			texto = texto + "Herramienta " + i + ": "+ this.listaHerramientas.get(i).getTipo() + ". Bonus: " + this.listaHerramientas.get(i).getBonus() + ". Usos restantes: " + this.listaHerramientas.get(i).getUsosRestantes() + "\n";
+			System.out.println("Posicion " + i + " - "+ this.listaHerramientas.get(i).toString() + "\n");
+			texto = texto + "Posicion " + i + " - "+ this.listaHerramientas.get(i).toString() + "\n";
 		}
 		JOptionPane.showMessageDialog(null, texto);
 	}
 	
-	public void controlHerramientaUsada(Integer numHerramienta) {
+	public String textoInventarioHerramientas() {
+		String texto = "";
+	
+		for(int i=0; i < this.listaHerramientas.size(); i++) {
+			System.out.println("Posicion " + i + " - "+ this.listaHerramientas.get(i).toString() + "\n");
+			texto = texto + "Posicion " + i + " - "+ this.listaHerramientas.get(i).toString() + "\n";
+		}
+		return texto;
+	}
+	
+	public void controlHerramientaUsos(Integer numHerramienta) {
 		//Quitar 1 uso a herramienta indicada
 		this.listaHerramientas.get(numHerramienta).setUsosRestantes(this.listaHerramientas.get(numHerramienta).getUsosRestantes()-1);
 		//Comprobar si quedan usos, quitar herramienta de inventario si no quedan

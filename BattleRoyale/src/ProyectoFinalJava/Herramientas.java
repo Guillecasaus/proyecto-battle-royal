@@ -47,5 +47,9 @@ public class Herramientas {
 		this.usosRestantes = usosRestantes;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Herramienta " + tipo + ": bonus = " + bonus + ", Usos = "
+				+ usosRestantes;
+	}
 }
