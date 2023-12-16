@@ -1,6 +1,4 @@
 package ProyectoFinalJava;
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -302,15 +300,6 @@ public static void turnoMaquina(Partida partidaActual, Integer numJugadorAtacant
 				JOptionPane.showMessageDialog(null, "Partida iniciada");
 				crearJugadores(partidaActiva);	
 				partidaEnCurso(partidaActiva);
-				
-				
-				File currentDir = new File(System.getProperty("user.dir"));
-				try {
-					File logFile = new File(currentDir.getCanonicalPath() + "\\files\\logPartida.txt");
-				} catch (IOException e) {
-					JOptionPane.showMessageDialog(null, "ERROR: Error inesperado a la hora de crear el fichero de log de la partida");
-					e.printStackTrace();
-				}
 			break;	
 			case "2":
 				JOptionPane.showMessageDialog(null, "Partida reanudada");

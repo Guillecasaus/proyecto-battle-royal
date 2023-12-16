@@ -303,7 +303,6 @@ public static void turnoMaquina(Partida partidaActual, Integer numJugadorAtacant
 				crearJugadores(partidaActiva);	
 				partidaEnCurso(partidaActiva);
 				
-				
 				File currentDir = new File(System.getProperty("user.dir"));
 				try {
 					File logFile = new File(currentDir.getCanonicalPath() + "\\files\\logPartida.txt");

@@ -10,9 +10,6 @@ public class Turno {
 	
 	public Turno(Integer turnoJugador) {
 		this.turnoJugador = turnoJugador;
-		this.afectado = "N/A";
-		this.accionesTurno = Acciones.ERROR;
-		this.exitoso = false;
 	}
 
 	public String getActua() {
@@ -46,14 +43,6 @@ public class Turno {
 	public void setExitoso(Boolean exitoso) {
 		this.exitoso = exitoso;
 	}
-
-	@Override
-	public String toString() {
-		return "Turno " + turnoJugador + ":\n"
-				+ "    Jugador actuando: " + actua + "\n"
-				+ "    Jugador afectado: " + afectado + "\n"
-				+ "    Acción en el turno: " + accionesTurno + "\n"
-				+ "    Acción se lleva a cabo con éxito: " + exitoso + "\n\n";
-	}
+	
 	
 }
