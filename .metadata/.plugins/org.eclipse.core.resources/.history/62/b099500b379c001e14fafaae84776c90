@@ -1,5 +1,4 @@
 package ProyectoFinalJava;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.*;	
@@ -142,7 +141,7 @@ public static void turnoMaquina(Partida partidaActual, Integer numJugadorAtacant
 		String jugadoresDisponibles;
 		Integer jugadorAtacado;
 		
-		List<Turno> listaTurnos = new ArrayList<Turno>();
+		List<Turno> listaTurnos;
 		
 		do{
 			numJugadorAtacante = numTurnos % partidaActual.jugadoresDisponibles();
@@ -177,6 +176,7 @@ public static void turnoMaquina(Partida partidaActual, Integer numJugadorAtacant
 								turnoActual.setAccionesTurno(Acciones.atacarHerramienta);
 								menuHerramientaAtaque = JOptionPane.showInputDialog("Turno: " + numTurnos + "\nJugador Numero: " + partidaActual.devolverNumeroJugador(numJugadorAtacante) + "\n Introduzca numero de la herramienta deseada: \n"+ partidaActual.getListaPersonajes().get(numJugadorAtacante).textoInventarioHerramientas());
 								if (Integer.valueOf(menuHerramientaAtaque) <= partidaActual.getListaPersonajes().get(numJugadorAtacante).getListaHerramientas().size() && partidaActual.getListaPersonajes().get(numJugadorAtacante).getListaHerramientas().size() != 0) {
+									//Buscar herramienta
 									damage = partidaActual.obtenerDamage(numJugadorAtacante) + partidaActual.getListaPersonajes().get(numJugadorAtacante).getListaHerramientas().get(Integer.valueOf(menuHerramientaAtaque)).getBonus();
 									partidaActual.getListaPersonajes().get(numJugadorAtacante).controlHerramientaUsos(Integer.valueOf(menuHerramientaAtaque));
 								} else {
@@ -203,11 +203,11 @@ public static void turnoMaquina(Partida partidaActual, Integer numJugadorAtacant
 					case "2":
 						turnoActual.setAccionesTurno(Acciones.HabilidadOfensiva);
 						if (partidaActual.getListaPersonajes().get(numJugadorAtacante).estaEnCD == false) {
+							turnoActual.setExitoso(true);
 							jugadoresDisponibles = JOptionPane.showInputDialog("Contra que jugador quieres usar la habilidad: \n" + partidaActual.textoPersonajes());
 							jugadorAtacado = Integer.parseInt(jugadoresDisponibles);
 							turnoActual.setAfectado(partidaActual.getListaPersonajes().get(jugadorAtacado).getNombre());
 							damage = partidaActual.obtenerDamageHabilidad(numJugadorAtacante);
-							turnoActual.setExitoso(true);;
 							partidaActual.quitarDamage(partidaActual.devolverPosicionJugador(jugadorAtacado), damage);
 							if (partidaActual.devolverVidaPersonaje(partidaActual.devolverPosicionJugador(jugadorAtacado)) <= 0) {
 								partidaActual.jugadorEliminado(partidaActual.devolverPosicionJugador(jugadorAtacado));
@@ -230,28 +230,24 @@ public static void turnoMaquina(Partida partidaActual, Integer numJugadorAtacant
 									partidaActual.getListaPersonajes().get(numJugadorAtacante).asignarHerramienta(new HerramientaBaston("Baston"));
 									partidaActual.getListaPersonajes().get(numJugadorAtacante).estaCDHerramienta = true;
 									partidaActual.getListaPersonajes().get(numJugadorAtacante).setCounterCDHerramienta(Partida.TURNOS_CD_ESCOGER_HERRAMIENTA+1);
-									turnoActual.setExitoso(true);
 								break;
 								case "1": 
 									partidaActual.getListaPersonajes().get(numJugadorAtacante).asignarHerramienta(new HerramientaEspada("Espada"));
 									partidaActual.getListaPersonajes().get(numJugadorAtacante).estaCDHerramienta = true;
 									partidaActual.getListaPersonajes().get(numJugadorAtacante).setCounterCDHerramienta(Partida.TURNOS_CD_ESCOGER_HERRAMIENTA+1);
-									turnoActual.setExitoso(true);
 								break;
 								case "2": 
 									partidaActual.getListaPersonajes().get(numJugadorAtacante).asignarHerramienta(new HerramientaArco("Arco"));
 									partidaActual.getListaPersonajes().get(numJugadorAtacante).estaCDHerramienta = true;
 									partidaActual.getListaPersonajes().get(numJugadorAtacante).setCounterCDHerramienta(Partida.TURNOS_CD_ESCOGER_HERRAMIENTA+1);
-									turnoActual.setExitoso(true);
 								break;
 								default:
 									JOptionPane.showMessageDialog(null, "No existe la herramienta escogida");
-									turnoActual.setExitoso(false);
 								break;
 							}
 						} else {
+							//TODO Volver al inicio
 							JOptionPane.showMessageDialog(null, "Aún no puede volver a elegir una herramienta");
-							turnoActual.setExitoso(false);
 						}
 					break;	
 					case "4":
@@ -259,16 +255,14 @@ public static void turnoMaquina(Partida partidaActual, Integer numJugadorAtacant
 						turnoActual.setAfectado(partidaActual.getListaPersonajes().get(numJugadorAtacante).getNombre());
 						vida = partidaActual.obtenerVida(jugadorRecuperarVida);
 						partidaActual.recuperarVida(jugadorRecuperarVida, vida);
-						turnoActual.setExitoso(true);
 					break;
 					
 					default:	
 						JOptionPane.showMessageDialog(null, "Valor introducido erróneo");
-						turnoActual.setAccionesTurno(Acciones.ERROR);
 						
 					}
 			}	
-			listaTurnos.add(turnoActual);
+			listaTurnos.add(new Turno(numTurnos, partidaActual.getListaPersonajes().get(numJugadorAtacante).getNombre(), partidaActual.getListaPersonajes().get(jugadorAtacado).getNombre(), accionTurno));
 			numTurnos ++;
 			
 			//Jugador que gana la partida 

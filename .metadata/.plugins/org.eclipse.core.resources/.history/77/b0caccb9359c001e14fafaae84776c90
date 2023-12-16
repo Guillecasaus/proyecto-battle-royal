@@ -6,7 +6,6 @@ public class Turno {
 	private String actua;
 	private String afectado;
 	private Acciones accionesTurno;
-	private Boolean exitoso;
 	
 	public Turno(Integer turnoJugador) {
 		this.turnoJugador = turnoJugador;
@@ -34,14 +33,6 @@ public class Turno {
 
 	public void setAccionesTurno(Acciones accionesTurno) {
 		this.accionesTurno = accionesTurno;
-	}
-
-	public Boolean getExitoso() {
-		return exitoso;
-	}
-
-	public void setExitoso(Boolean exitoso) {
-		this.exitoso = exitoso;
 	}
 	
 	

@@ -1,5 +1,4 @@
 package ProyectoFinalJava;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.*;	
@@ -142,7 +141,7 @@ public static void turnoMaquina(Partida partidaActual, Integer numJugadorAtacant
 		String jugadoresDisponibles;
 		Integer jugadorAtacado;
 		
-		List<Turno> listaTurnos = new ArrayList<Turno>();
+		List<Turno> listaTurnos = new ArrayList<Turnos>;
 		
 		do{
 			numJugadorAtacante = numTurnos % partidaActual.jugadoresDisponibles();

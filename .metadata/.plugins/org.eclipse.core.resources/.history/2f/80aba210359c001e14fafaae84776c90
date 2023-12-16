@@ -1,0 +1,16 @@
+package ProyectoFinalJava;
+
+public class Turno {
+	
+	private Integer turnoJugador;
+	private String atacante;
+	private String atacado;
+	private Acciones accionesTurno;
+	
+	public Turno(Integer turnoJugador, String atacante, String atacado, Acciones accionesTurno) {
+		this.turnoJugador = turnoJugador;
+		this.atacante = atacante; 
+		this.atacado = atacado;
+		this.accionesTurno = accionesTurno;
+	}
+}

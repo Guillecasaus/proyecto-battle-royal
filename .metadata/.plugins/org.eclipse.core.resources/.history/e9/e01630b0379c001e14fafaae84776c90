@@ -290,6 +290,8 @@ public static void turnoMaquina(Partida partidaActual, Integer numJugadorAtacant
 		}
 	}
 	
+	public voidS 
+	
 	public static void main(String[] args) {
 		
 	String menu = JOptionPane.showInputDialog("1. Iniciar Partida\n2. Continuar Partida\n3 Terminar");

@@ -2,5 +2,5 @@ package ProyectoFinalJava;
 
 public enum Acciones {
 
-	atacar, recuperarVida, cogerObjeto;
+	atacarNormal, atacarHerramienta, HabilidadOfensiva, recuperarVida, cogerObjeto, ERROR;
 }
