@@ -126,4 +126,43 @@ public class Partida {
 		}
 		JOptionPane.showMessageDialog(null, texto);
 	}	
+
+	public String mostrarTextoHerramientasDisponibles() {
+		String texto = "Herramientas disponibles: \n\n";
+		Integer positionList = 0;
+	
+		for(TipoArma tipo : TipoArma.values()) {
+			System.out.println(positionList + ": Herramienta " + tipo + "\n");
+			texto = texto + positionList + ": Herramienta " + tipo + "\n";
+			positionList++;
+		}
+		return texto;
+	}	
+	
+
+	public Integer esMaquina(Integer posicionJugador) {
+		if(this.listaPersonajes.get(posicionJugador).getTipoUser() == TipoJugador.maquina) {
+			return 1;
+		}
+		else {
+			return 0;
+		}
+	}
+
+	public void calcularGanador() {
+		
+		String jugadorMasVida ="";
+		Integer maxVida = 0;
+		
+		for(int i=0; i<this.jugadoresDisponibles(); i++) {
+			
+			if(this.listaPersonajes.get(i).getVidaPersonaje() > maxVida) {
+				jugadorMasVida = this.listaPersonajes.get(i).getNombre();
+				maxVida = this.listaPersonajes.get(i).getVidaPersonaje();
+			}
+		}
+		JOptionPane.showMessageDialog(null, "El jugador: " + jugadorMasVida + " es el ganador");
+	}
+
+
 }
