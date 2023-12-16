@@ -114,16 +114,4 @@ public class Partida {
 	public String devolverNombreJugador(Integer posicionJugador) {
 		return this.listaPersonajes.get(posicionJugador).getNombre();
 	}
-	
-	public void mostrarHerramientasDisponibles() {
-		String texto = "Herramientas disponibles: \n\n";
-		Integer positionList = 0;
-	
-		for(TipoArma tipo : TipoArma.values()) {
-			System.out.println(positionList + ": Herramienta " + tipo + "\n");
-			texto = texto + positionList + ": Herramienta " + tipo + "\n";
-			positionList++;
-		}
-		JOptionPane.showMessageDialog(null, texto);
-	}	
 }

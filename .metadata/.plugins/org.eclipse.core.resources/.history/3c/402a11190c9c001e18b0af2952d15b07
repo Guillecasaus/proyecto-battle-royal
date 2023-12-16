@@ -231,7 +231,7 @@ public class Personaje {
 	}
 	
 	public void mostrarInventarioHerramientas() {
-		String texto = "Herramientas en el inventario: \n\n";
+		String texto = "";
 	
 		for(int i=0; i < this.listaHerramientas.size(); i++) {
 			System.out.println("Herramienta " + i + ": "+ this.listaHerramientas.get(i).getTipo() + ". Bonus: " + this.listaHerramientas.get(i).getBonus() + ". Usos restantes: " + this.listaHerramientas.get(i).getUsosRestantes());

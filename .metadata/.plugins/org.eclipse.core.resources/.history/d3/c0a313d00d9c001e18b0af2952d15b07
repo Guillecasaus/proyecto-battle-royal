@@ -122,7 +122,7 @@ public class Menu {
 					}
 				break;	
 				case "3":
-					partidaActual.mostrarHerramientasDisponibles();
+					
 				break;	
 				case "4":
 					vida = partidaActual.obtenerVida(jugadorRecuperarVida);

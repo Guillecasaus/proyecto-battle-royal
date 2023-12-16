@@ -115,7 +115,7 @@ public class Partida {
 		return this.listaPersonajes.get(posicionJugador).getNombre();
 	}
 	
-	public void mostrarHerramientasDisponibles() {
+	public void mostrarInventarioHerramientas() {
 		String texto = "Herramientas disponibles: \n\n";
 		Integer positionList = 0;
 	

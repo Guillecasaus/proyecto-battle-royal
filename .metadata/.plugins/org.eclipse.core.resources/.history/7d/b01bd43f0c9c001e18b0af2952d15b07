@@ -47,5 +47,17 @@ public class Herramientas {
 		this.usosRestantes = usosRestantes;
 	}
 	
+	public void mostrarInventarioHerramientas() {
+		String texto = "Herramientas disponibles: \n\n";
+		Integer positionList = 0;
+	
+		for(TipoArma tipo : TipoArma.values()) {
+			System.out.println(positionList + ": Herramienta " + tipo + "\n");
+			texto = texto + positionList + ": Herramienta " + tipo + "\n";
+			positionList++;
+		}
+		JOptionPane.showMessageDialog(null, texto);
+	}	
+	
 	
 }
