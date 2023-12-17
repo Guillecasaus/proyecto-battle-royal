@@ -1,5 +1,6 @@
 package ProyectoFinalJava;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +9,9 @@ import javax.swing.*;
 
 public class Menu {
 	
-public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacante, Integer numTurnos) {
+	private static List<Turno> listaTurnos = new ArrayList<Turno>();
+	
+	public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacante, Integer numTurnos) {
 		
 		Integer menuAtaque = (int)(Math.random()*2+1);
 		Integer menuPartida = (int)(Math.random()*4+1);
@@ -25,7 +28,8 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 			switch (menuAtaque) {
 				case 1:
 					turnoActual.setAccionesTurno(Acciones.atacarNormal);
-					turnoActual.setAfectado(partidaActual.getListaPersonajes().get(jugadorAtacado).getNombre());
+					turnoActual.setAfectado(partidaActual.getListaPersonajes().get(partidaActual.devolverPosicionJugador(jugadorAtacado)
+							).getNombre());
 					System.out.println("paso 1 " + numJugadorAtacante);
 					damage = partidaActual.obtenerDamage(numJugadorAtacante);
 					partidaActual.quitarDamage(jugadorAtacado, damage);
@@ -51,7 +55,7 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 						turnoActual.setExitoso(false);
 					}	
 					System.out.println("Paso 2,4");
-					turnoActual.setAfectado(partidaActual.getListaPersonajes().get(jugadorAtacado).getNombre());
+					turnoActual.setAfectado(partidaActual.getListaPersonajes().get(partidaActual.devolverPosicionJugador(jugadorAtacado)).getNombre());
 					partidaActual.quitarDamage(jugadorAtacado, damage);
 					System.out.println("Paso 2,5");					
 					turnoActual.setExitoso(true);
@@ -66,7 +70,7 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 		case 2:
 			turnoActual.setAccionesTurno(Acciones.HabilidadOfensiva);
 			if (partidaActual.getListaPersonajes().get(numJugadorAtacante).estaEnCD == false) {
-				turnoActual.setAfectado(partidaActual.getListaPersonajes().get(jugadorAtacado).getNombre());
+				turnoActual.setAfectado(partidaActual.getListaPersonajes().get(partidaActual.devolverPosicionJugador(jugadorAtacado)).getNombre());
 				damage = partidaActual.obtenerDamageHabilidad(numJugadorAtacante);
 				partidaActual.quitarDamage(jugadorAtacado, damage);
 				partidaActual.getListaPersonajes().get(numJugadorAtacante).estaEnCD = true;
@@ -208,8 +212,6 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 		String jugadoresDisponibles;
 		Integer jugadorAtacado;
 		
-		List<Turno> listaTurnos = new ArrayList<Turno>();
-		
 		do{
 			numJugadorAtacante = numTurnos % partidaActual.jugadoresDisponibles();
 			jugadorRecuperarVida = numTurnos % partidaActual.jugadoresDisponibles();
@@ -230,7 +232,7 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 								turnoActual.setAccionesTurno(Acciones.atacarNormal);
 								jugadoresDisponibles = JOptionPane.showInputDialog("A que jugador quieres atacar: \n" + partidaActual.textoPersonajes());
 								jugadorAtacado = Integer.parseInt(jugadoresDisponibles);	
-								turnoActual.setAfectado(partidaActual.getListaPersonajes().get(jugadorAtacado).getNombre());
+								turnoActual.setAfectado(partidaActual.getListaPersonajes().get(partidaActual.devolverPosicionJugador(jugadorAtacado)).getNombre());
 								damage = partidaActual.obtenerDamage(numJugadorAtacante);
 								partidaActual.quitarDamage(partidaActual.devolverPosicionJugador(jugadorAtacado), damage);
 								if (partidaActual.devolverVidaPersonaje(partidaActual.devolverPosicionJugador(jugadorAtacado)) <= 0) {
@@ -271,7 +273,7 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 						if (partidaActual.getListaPersonajes().get(numJugadorAtacante).estaEnCD == false) {
 							jugadoresDisponibles = JOptionPane.showInputDialog("Contra que jugador quieres usar la habilidad: \n" + partidaActual.textoPersonajes());
 							jugadorAtacado = Integer.parseInt(jugadoresDisponibles);
-							turnoActual.setAfectado(partidaActual.getListaPersonajes().get(jugadorAtacado).getNombre());
+							turnoActual.setAfectado(partidaActual.getListaPersonajes().get(partidaActual.devolverPosicionJugador(jugadorAtacado)).getNombre());
 							damage = partidaActual.obtenerDamageHabilidad(numJugadorAtacante);
 							turnoActual.setExitoso(true);;
 							partidaActual.quitarDamage(partidaActual.devolverPosicionJugador(jugadorAtacado), damage);
@@ -364,9 +366,8 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 	}
 	
 	public static void main(String[] args) {
-		
-	String menu = JOptionPane.showInputDialog("1. Iniciar Partida\n2. Continuar Partida\n3 Terminar");
-	System.out.println("Hello "+ menu);
+		String menu = JOptionPane.showInputDialog("1. Iniciar Partida\n2. Continuar Partida\n3 Terminar");
+		System.out.println("Hello "+ menu);
 		
 		switch(menu) {
 			case "1":
@@ -375,14 +376,22 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 				crearJugadores(partidaActiva);	
 				partidaEnCurso(partidaActiva);
 				
-				
 				File currentDir = new File(System.getProperty("user.dir"));
 				try {
 					File logFile = new File(currentDir.getCanonicalPath() + "\\files\\logPartida.txt");
+					FileWriter fileWriter = new FileWriter(logFile, logFile.exists());
+					
+					for (int i = 0; i < listaTurnos.size(); i++) {
+						fileWriter.append(listaTurnos.get(i).toString());
+					}
+					JOptionPane.showMessageDialog(null, "Fichero \"logPartida.txt\" ha sido creado correctamente.");
+					fileWriter.close();
 				} catch (IOException e) {
 					JOptionPane.showMessageDialog(null, "ERROR: Error inesperado a la hora de crear el fichero de log de la partida");
 					e.printStackTrace();
 				}
+				
+				
 			break;	
 			case "2":
 				JOptionPane.showMessageDialog(null, "Partida reanudada");
