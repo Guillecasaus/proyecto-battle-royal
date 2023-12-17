@@ -8,9 +8,9 @@ import javax.swing.JOptionPane;
 public class Partida {
 	public static final Integer TURNOS_CD_ESCOGER_HERRAMIENTA = 4;
 	public static final Integer TURNO_INICIAL = 0;
-	public static final Integer NUM_MAX_JUGADORES = 3;
+	public static final Integer NUM_MAX_JUGADORES = 5;
 	public static final Integer NUM_INICIAL_JUGADORES = 0;
-	public static final Integer MAX_TURNOS = 15;
+	public static final Integer MAX_TURNOS = 40;
 	
 	
 	private List <Personaje> listaPersonajes; 
@@ -90,7 +90,7 @@ public class Partida {
 	}
 
 	public void jugadorEliminado(Integer posicionJugador) {	
-		 this.listaPersonajes.remove( this.listaPersonajes.get(posicionJugador));
+		 this.listaPersonajes.remove(this.listaPersonajes.get(posicionJugador));
 		
 	}
 	
