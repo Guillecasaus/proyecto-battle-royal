@@ -21,7 +21,6 @@ public class Menu {
 	 	Integer damage;
 		Integer vida;
 		Turno turnoActual = new Turno(numTurnos);
-		turnoActual.setActua(partidaActual.getListaPersonajes().get(numJugadorAtacante).getNombre());
 		
 		System.out.println("paso:  " +  menuPartida  +" "+menuAtaque +" "+ menuHerramientaAtaque +" "+ jugadorAtacado +" "+ herramientaEscoger);
 		switch (menuPartida) {
@@ -376,10 +375,9 @@ public class Menu {
 				crearJugadores(partidaActiva);	
 				partidaEnCurso(partidaActiva);
 				
-				//File currentDir = new File(System.getProperty("user.dir"));
+				File currentDir = new File(System.getProperty("user.dir"));
 				try {
-					File logFile = new File("logPartida.txt");
-					//File logFile = new File(currentDir.getCanonicalPath() + "\\logPartida.txt");
+					File logFile = new File(currentDir.getCanonicalPath() + "\\files\\logPartida.txt");
 					FileWriter fileWriter = new FileWriter(logFile, logFile.exists());
 					
 					for (int i = 0; i < listaTurnos.size(); i++) {

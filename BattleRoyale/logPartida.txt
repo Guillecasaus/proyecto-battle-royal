@@ -1,0 +1,144 @@
+Turno 0:
+    Jugador actuando: Sofía
+    Jugador afectado: Sofía
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: Sofía
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 6:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: Sofía
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 9:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 10:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 11:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 12:
+    Jugador actuando: Sofía
+    Jugador afectado: Sofía
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 13:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 14:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 15:
+    Jugador actuando: Sofía
+    Jugador afectado: Sofía
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 16:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: Sofía
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 17:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 18:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 19:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 21:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 22:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+

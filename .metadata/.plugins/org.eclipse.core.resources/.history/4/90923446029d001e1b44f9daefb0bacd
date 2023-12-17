@@ -21,7 +21,6 @@ public class Menu {
 	 	Integer damage;
 		Integer vida;
 		Turno turnoActual = new Turno(numTurnos);
-		turnoActual.setActua(partidaActual.getListaPersonajes().get(numJugadorAtacante).getNombre());
 		
 		System.out.println("paso:  " +  menuPartida  +" "+menuAtaque +" "+ menuHerramientaAtaque +" "+ jugadorAtacado +" "+ herramientaEscoger);
 		switch (menuPartida) {
@@ -29,7 +28,8 @@ public class Menu {
 			switch (menuAtaque) {
 				case 1:
 					turnoActual.setAccionesTurno(Acciones.atacarNormal);
-					turnoActual.setAfectado(partidaActual.getListaPersonajes().get(jugadorAtacado).getNombre());
+					turnoActual.setAfectado(partidaActual.getListaPersonajes().get(partidaActual.devolverPosicionJugador(jugadorAtacado)
+							).getNombre());
 					System.out.println("paso 1 " + numJugadorAtacante);
 					damage = partidaActual.obtenerDamage(numJugadorAtacante);
 					partidaActual.quitarDamage(jugadorAtacado, damage);
@@ -55,7 +55,7 @@ public class Menu {
 						turnoActual.setExitoso(false);
 					}	
 					System.out.println("Paso 2,4");
-					turnoActual.setAfectado(partidaActual.getListaPersonajes().get(jugadorAtacado).getNombre());
+					turnoActual.setAfectado(partidaActual.getListaPersonajes().get(partidaActual.devolverPosicionJugador(jugadorAtacado)).getNombre());
 					partidaActual.quitarDamage(jugadorAtacado, damage);
 					System.out.println("Paso 2,5");					
 					turnoActual.setExitoso(true);
@@ -376,10 +376,9 @@ public class Menu {
 				crearJugadores(partidaActiva);	
 				partidaEnCurso(partidaActiva);
 				
-				//File currentDir = new File(System.getProperty("user.dir"));
+				File currentDir = new File(System.getProperty("user.dir"));
 				try {
-					File logFile = new File("logPartida.txt");
-					//File logFile = new File(currentDir.getCanonicalPath() + "\\logPartida.txt");
+					File logFile = new File(currentDir.getCanonicalPath() + "\\files\\logPartida.txt");
 					FileWriter fileWriter = new FileWriter(logFile, logFile.exists());
 					
 					for (int i = 0; i < listaTurnos.size(); i++) {

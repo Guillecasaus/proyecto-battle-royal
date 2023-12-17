@@ -21,7 +21,6 @@ public class Menu {
 	 	Integer damage;
 		Integer vida;
 		Turno turnoActual = new Turno(numTurnos);
-		turnoActual.setActua(partidaActual.getListaPersonajes().get(numJugadorAtacante).getNombre());
 		
 		System.out.println("paso:  " +  menuPartida  +" "+menuAtaque +" "+ menuHerramientaAtaque +" "+ jugadorAtacado +" "+ herramientaEscoger);
 		switch (menuPartida) {
