@@ -23,17 +23,20 @@ public class Menu {
 		Turno turnoActual = new Turno(numTurnos);
 		turnoActual.setActua(partidaActual.getListaPersonajes().get(numJugadorAtacante).getNombre());
 		
-		System.out.println("paso:  " +  menuPartida  +" "+menuAtaque +" "+ menuHerramientaAtaque +" "+ jugadorAtacado +" "+ herramientaEscoger);
+		do {
+		jugadorAtacado = (int)(Math.random()*partidaActual.jugadoresDisponibles());
+		}while(jugadorAtacado == numJugadorAtacante);
+		
 		switch (menuPartida) {
 		case 1:
 			switch (menuAtaque) {
 				case 1:
 					turnoActual.setAccionesTurno(Acciones.atacarNormal);
 					turnoActual.setAfectado(partidaActual.getListaPersonajes().get(jugadorAtacado).getNombre());
-					System.out.println("paso 1 " + numJugadorAtacante);
+					//System.out.println("paso 1 " + numJugadorAtacante);
 					damage = partidaActual.obtenerDamage(numJugadorAtacante);
 					partidaActual.quitarDamage(jugadorAtacado, damage);
-					System.out.println("paso 1 " + jugadorAtacado + damage );
+					//System.out.println("paso 1 " + jugadorAtacado + damage );
 					if (partidaActual.devolverVidaPersonaje(jugadorAtacado) <= 0) {
 						partidaActual.jugadorEliminado(jugadorAtacado);
 					}
@@ -43,27 +46,21 @@ public class Menu {
 				case 2:
 					//partidaActual.getListaPersonajes().get(numJugadorAtacante).mostrarInventarioHerramientas();
 					turnoActual.setAccionesTurno(Acciones.atacarHerramienta);
-					System.out.println("Paso 2,1");
 					if ((menuHerramientaAtaque) <= partidaActual.getListaPersonajes().get(numJugadorAtacante).getListaHerramientas().size() && partidaActual.getListaPersonajes().get(numJugadorAtacante).getListaHerramientas().size() != 0) {
-						System.out.println("Paso 2,2");
 						damage = partidaActual.obtenerDamage(numJugadorAtacante) + partidaActual.getListaPersonajes().get(numJugadorAtacante).getListaHerramientas().get(menuHerramientaAtaque).getBonus();
-						System.out.println("Paso 2,3");
 						partidaActual.getListaPersonajes().get(numJugadorAtacante).controlHerramientaUsos((menuHerramientaAtaque));
 					} else {
 						JOptionPane.showMessageDialog(null, "No tiene ninguna herramienta en esta posicion de inventario");
 						damage = partidaActual.obtenerDamage(numJugadorAtacante);
 						turnoActual.setExitoso(false);
 					}	
-					System.out.println("Paso 2,4");
 					turnoActual.setAfectado(partidaActual.getListaPersonajes().get(jugadorAtacado).getNombre());
-					partidaActual.quitarDamage(jugadorAtacado, damage);
-					System.out.println("Paso 2,5");					
+					partidaActual.quitarDamage(jugadorAtacado, damage);					
 					turnoActual.setExitoso(true);
 					
 					if (partidaActual.devolverVidaPersonaje(jugadorAtacado) <= 0) {
 						partidaActual.jugadorEliminado(jugadorAtacado);
 					}
-					System.out.println("Paso 2,6 "+ jugadorAtacado+ " "+ numJugadorAtacante);
 				break;
 			}
 		break;
@@ -135,26 +132,45 @@ public class Menu {
 		Integer numJugadores = 0;
 		String nombreMaquina;
 		String nombreJugador;
+		PersonajeMago mago;	
+		PersonajeElfo elfo;
+		PersonajeGuerrero guerrero;
+	
 		
 		do {
 			String tipoJugador = JOptionPane.showInputDialog("1. Mago\n2. Guerrero\n3. Elfo\n4. Generar juagdores máquina");
 			
 				switch(tipoJugador) {
 					case "1":
+						do {
 						nombreJugador = JOptionPane.showInputDialog("Personaje número: " + (numJugadores + 1) + ", Nombre: ");
-						PersonajeMago mago = new PersonajeMago(nombreJugador, TipoJugador.humano, numJugadores + 1);							
+						mago = new PersonajeMago(nombreJugador, TipoJugador.humano, numJugadores + 1);													
+						if(partidaActual.comparaPersonaje(mago)){
+							JOptionPane.showMessageDialog(null, "Este nombre ya ha sido introducido");
+						}
+						}while(partidaActual.comparaPersonaje(mago));
 						partidaActual.nuevoPersonaje(mago);
 						mago.asignarHerramienta(new HerramientaBaston("baston"));
 					break;	
 					case "2":
+						do {
 						nombreJugador = JOptionPane.showInputDialog("Personaje número: " + (numJugadores + 1) + ", Nombre: ");
-						PersonajeGuerrero guerrero = new PersonajeGuerrero(nombreJugador, TipoJugador.humano, numJugadores + 1);
+						guerrero = new PersonajeGuerrero(nombreJugador, TipoJugador.humano, numJugadores + 1);
+						if(partidaActual.comparaPersonaje(guerrero)){
+							JOptionPane.showMessageDialog(null, "Este nombre ya ha sido introducido");
+						}
+						}while(partidaActual.comparaPersonaje(guerrero));
 						partidaActual.nuevoPersonaje(guerrero);
 						guerrero.asignarHerramienta(new HerramientaBaston("baston"));
 					break;	
 					case "3":
+						do {
 						nombreJugador = JOptionPane.showInputDialog("Personaje número: " + (numJugadores + 1) + ", Nombre: ");
-						PersonajeElfo elfo = new PersonajeElfo(nombreJugador, TipoJugador.humano, numJugadores + 1);
+						elfo = new PersonajeElfo(nombreJugador, TipoJugador.humano, numJugadores + 1);
+						if(partidaActual.comparaPersonaje(elfo)){
+							JOptionPane.showMessageDialog(null, "Este nombre ya ha sido introducido");
+						}
+						}while(partidaActual.comparaPersonaje(elfo));
 						partidaActual.nuevoPersonaje(elfo);
 						elfo.asignarHerramienta(new HerramientaBaston("baston"));
 					break;
@@ -209,8 +225,8 @@ public class Menu {
 		String menuHerramientaAtaque;
 		Integer damage;
 		Integer vida;
-		String jugadoresDisponibles;
-		Integer jugadorAtacado;
+		String jugadoresDisponibles=" ";
+		Integer jugadorAtacado=0;
 		
 		do{
 			numJugadorAtacante = numTurnos % partidaActual.jugadoresDisponibles();
@@ -223,22 +239,31 @@ public class Menu {
 			if(partidaActual.esMaquina(numJugadorAtacante) == 1) {
 				turnoActual = turnoMaquina(partidaActual, numJugadorAtacante, numTurnos);
 			} else {
-				menuPartida = JOptionPane.showInputDialog("Turno: " + numTurnos + "\nJugador Numero: " + partidaActual.devolverNumeroJugador(numJugadorAtacante) + "\n1. Atacar \n2. Usar Habilidad Ofensiva \n3 Coger Objeto \n4. Recuperar Vida");
+				menuPartida = JOptionPane.showInputDialog("Turno: " + numTurnos + "\nJugador Numero: " + partidaActual.devolverNumeroJugador(numJugadorAtacante) + "\n1. Atacar \n2. Usar Habilidad Ofensiva\n3 Coger Objeto \n4. Recuperar Vida");
 				switch (menuPartida) {
 					case "1":
 						menuAtaque = JOptionPane.showInputDialog("Turno: " + numTurnos + "\nJugador Numero: " + partidaActual.devolverNumeroJugador(numJugadorAtacante) + "\n1. Ataque Normal \n2. Usar Herramienta");
 						switch (menuAtaque) {
 							case "1":
-								turnoActual.setAccionesTurno(Acciones.atacarNormal);
-								jugadoresDisponibles = JOptionPane.showInputDialog("A que jugador quieres atacar: \n" + partidaActual.textoPersonajes());
-								jugadorAtacado = Integer.parseInt(jugadoresDisponibles);	
-								turnoActual.setAfectado(partidaActual.getListaPersonajes().get(partidaActual.devolverPosicionJugador(jugadorAtacado)).getNombre());
-								damage = partidaActual.obtenerDamage(numJugadorAtacante);
-								partidaActual.quitarDamage(partidaActual.devolverPosicionJugador(jugadorAtacado), damage);
+									turnoActual.setAccionesTurno(Acciones.atacarNormal);
+									do{
+									jugadoresDisponibles = JOptionPane.showInputDialog("A que jugador quieres atacar: \n" + partidaActual.textoPersonajes());																																													
+									jugadorAtacado = Integer.parseInt(jugadoresDisponibles);
+									if(partidaActual.devolverPosicionJugador(jugadorAtacado) == numJugadorAtacante) {
+										JOptionPane.showMessageDialog(null, "No te puedes atacar a ti mismo");
+									}
+									}while(partidaActual.devolverPosicionJugador(jugadorAtacado) == numJugadorAtacante);
+									
+									//jugadorAtacado = Integer.parseInt(jugadoresDisponibles);	
+									turnoActual.setAfectado(partidaActual.getListaPersonajes().get(partidaActual.devolverPosicionJugador(jugadorAtacado)).getNombre());
+									damage = partidaActual.obtenerDamage(numJugadorAtacante);
+									partidaActual.quitarDamage(partidaActual.devolverPosicionJugador(jugadorAtacado), damage);
+								
 								if (partidaActual.devolverVidaPersonaje(partidaActual.devolverPosicionJugador(jugadorAtacado)) <= 0) {
 									partidaActual.jugadorEliminado(partidaActual.devolverPosicionJugador(jugadorAtacado));
 								}
 								turnoActual.setExitoso(true);
+												
 							break;
 							case "2":
 								//partidaActual.getListaPersonajes().get(numJugadorAtacante).mostrarInventarioHerramientas();
@@ -252,8 +277,14 @@ public class Menu {
 									damage = partidaActual.obtenerDamage(numJugadorAtacante);
 									turnoActual.setExitoso(false);
 								}
+								do {
 								jugadoresDisponibles = JOptionPane.showInputDialog("A que jugador quieres atacar: \n" + partidaActual.textoPersonajes());
 								jugadorAtacado = Integer.parseInt(jugadoresDisponibles);	
+								if(partidaActual.devolverPosicionJugador(jugadorAtacado) == numJugadorAtacante) {
+									JOptionPane.showMessageDialog(null, "No te puedes atacar a ti mismo");
+								}
+								}while(partidaActual.devolverPosicionJugador(jugadorAtacado) == numJugadorAtacante);
+								
 								turnoActual.setAfectado(partidaActual.getListaPersonajes().get(partidaActual.devolverPosicionJugador(jugadorAtacado)).getNombre());
 								partidaActual.quitarDamage(partidaActual.devolverPosicionJugador(jugadorAtacado), damage);
 								turnoActual.setExitoso(true);
@@ -271,8 +302,15 @@ public class Menu {
 					case "2":
 						turnoActual.setAccionesTurno(Acciones.HabilidadOfensiva);
 						if (partidaActual.getListaPersonajes().get(numJugadorAtacante).estaEnCD == false) {
+							
+							do{
 							jugadoresDisponibles = JOptionPane.showInputDialog("Contra que jugador quieres usar la habilidad: \n" + partidaActual.textoPersonajes());
 							jugadorAtacado = Integer.parseInt(jugadoresDisponibles);
+							if(partidaActual.devolverPosicionJugador(jugadorAtacado) == numJugadorAtacante) {
+								JOptionPane.showMessageDialog(null, "No te puedes atacar a ti mismo");
+							}
+							}while(partidaActual.devolverPosicionJugador(jugadorAtacado) == numJugadorAtacante);
+							
 							turnoActual.setAfectado(partidaActual.getListaPersonajes().get(partidaActual.devolverPosicionJugador(jugadorAtacado)).getNombre());
 							damage = partidaActual.obtenerDamageHabilidad(numJugadorAtacante);
 							turnoActual.setExitoso(true);;
@@ -338,7 +376,7 @@ public class Menu {
 			listaTurnos.add(turnoActual);
 			numTurnos ++;
 		
-			System.out.println("Final turno: "+ turnoActual+" "+ numJugadorAtacante+" "+partidaActual.jugadoresDisponibles());
+			//System.out.println("Final turno: "+ turnoActual+" "+ numJugadorAtacante+" "+partidaActual.jugadoresDisponibles());
 			//Controlar cuando el ultimo jugador ha eliminado a alguien
 			if(numJugadorAtacante >= partidaActual.jugadoresDisponibles()) {
 			

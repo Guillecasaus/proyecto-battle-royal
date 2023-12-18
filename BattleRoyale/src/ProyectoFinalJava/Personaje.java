@@ -235,7 +235,7 @@ public class Personaje {
 	
 		for(int i=0; i < this.listaHerramientas.size(); i++) {
 			System.out.println("Posicion " + i + " - "+ this.listaHerramientas.get(i).toString() + "\n");
-			texto = texto + "Posicion " + i + " - "+ this.listaHerramientas.get(i).toString() + "\n";
+			texto = texto + "Posicion " + i + " - "+ this.listaHerramientas.get(i).toString() + "\n"	;
 		}
 		JOptionPane.showMessageDialog(null, texto);
 	}
@@ -271,4 +271,26 @@ public class Personaje {
 		
 	}
 
+	public boolean equals(Personaje personaje) {
+		if(this.nombre.equals(personaje.getNombre())) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	public Integer compareTo(Personaje personaje) {
+		if(this.numeroJugador == personaje.getNumeroJugador()) {
+			return 0;
+		}
+		if(this.numeroJugador > personaje.getNumeroJugador()){
+			return 1;
+		}
+		return -1;
+	}
+	
+
 }
+
+
