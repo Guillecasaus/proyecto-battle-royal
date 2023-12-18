@@ -37,8 +37,8 @@ public class Partida {
 		String texto = "";
 	
 		for(int i=0; i < this.listaPersonajes.size(); i++) {
-			System.out.println("Numero Jugador: " + this.listaPersonajes.get(i).getNumeroJugador() + " Nombre Personaje: "+ this.listaPersonajes.get(i).getNombre() + " Tipo de personje: " + this.listaPersonajes.get(i).getTipoPer() + " Vida personaje: " + this.listaPersonajes.get(i).getVidaPersonaje());
-			texto = texto + "Numero Jugador: " + this.listaPersonajes.get(i).getNumeroJugador() + " Nombre Personaje: "+ this.listaPersonajes.get(i).getNombre() + " Tipo de personje: " + this.listaPersonajes.get(i).getTipoPer() + " Vida personaje: " + this.listaPersonajes.get(i).getVidaPersonaje() + "\n";
+			System.out.println(this.listaPersonajes.get(i).toString());
+			texto = texto + this.listaPersonajes.get(i).toString() + "\n";
 		}
 		JOptionPane.showMessageDialog(null, texto);
 	}
@@ -51,7 +51,7 @@ public class Partida {
 		String texto = "Jugadores en la partida: \n\n";
 	
 		for(int i=0; i < this.listaPersonajes.size(); i++) {
-			texto = texto + "Numero Jugador: " + this.listaPersonajes.get(i).getNumeroJugador() + " Nombre Personaje: "+ this.listaPersonajes.get(i).getNombre() + " Tipo de personje: " + this.listaPersonajes.get(i).getTipoPer() + " Vida personaje: " + this.listaPersonajes.get(i).getVidaPersonaje() + "\n";
+			texto = texto + this.listaPersonajes.get(i).toString() + "\n";
 		}
 		return texto;
 	}

@@ -1,7 +1,5 @@
 package ProyectoFinalJava;
 
-import javax.swing.JOptionPane;
-
 public class Herramientas {
 	protected String nombre;
 	protected Integer bonus;

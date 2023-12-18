@@ -77,8 +77,7 @@ public class Menu {
 				}
 				turnoActual.setExitoso(true);
 			} else {
-				//TODO Volver al inicio
-				JOptionPane.showMessageDialog(null, "La habilidad no está disponible"); //TODO Poner cuantos turnos faltan
+				JOptionPane.showMessageDialog(null, "La habilidad no está disponible");
 				turnoActual.setExitoso(false);
 			}
 		break;	
@@ -321,8 +320,7 @@ public class Menu {
 							partidaActual.getListaPersonajes().get(numJugadorAtacante).estaEnCD = true;
 							partidaActual.getListaPersonajes().get(numJugadorAtacante).setCounterCD(partidaActual.getListaPersonajes().get(numJugadorAtacante).getCooldownHabilidad()+1);
 						} else {
-							//TODO Volver al inicio
-							JOptionPane.showMessageDialog(null, "La habilidad no está disponible"); //TODO Poner cuantos turnos faltan 
+							JOptionPane.showMessageDialog(null, "La habilidad no está disponible");
 							turnoActual.setExitoso(false);
 						}
 					break;	
@@ -414,20 +412,23 @@ public class Menu {
 				crearJugadores(partidaActiva);	
 				partidaEnCurso(partidaActiva);
 				
-				//File currentDir = new File(System.getProperty("user.dir"));
-				try {
-					File logFile = new File("logPartida.txt");
-					//File logFile = new File(currentDir.getCanonicalPath() + "\\logPartida.txt");
-					FileWriter fileWriter = new FileWriter(logFile, logFile.exists());
+				String opcionLog = JOptionPane.showInputDialog("Si desea crear un fichero con el resumen de la partida, escriba \"si\" debajo");
+				
+				if(opcionLog.equals("si")) {
+					try {
+						File logFile = new File("logPartida.txt");
+						FileWriter fileWriter = new FileWriter(logFile, logFile.exists());
 					
-					for (int i = 0; i < listaTurnos.size(); i++) {
-						fileWriter.append(listaTurnos.get(i).toString());
+						for (int i = 0; i < listaTurnos.size(); i++) {
+							fileWriter.append(listaTurnos.get(i).toString());
+						}
+						fileWriter.append("Resultado final: Victoria de " + partidaActiva.devolverNombreJugador(0));
+						JOptionPane.showMessageDialog(null, "Fichero \"logPartida.txt\" ha sido creado correctamente.");
+						fileWriter.close();
+					} catch (IOException e) {
+						JOptionPane.showMessageDialog(null, "ERROR: Error inesperado a la hora de crear el fichero de log de la partida");
+						e.printStackTrace();
 					}
-					JOptionPane.showMessageDialog(null, "Fichero \"logPartida.txt\" ha sido creado correctamente.");
-					fileWriter.close();
-				} catch (IOException e) {
-					JOptionPane.showMessageDialog(null, "ERROR: Error inesperado a la hora de crear el fichero de log de la partida");
-					e.printStackTrace();
 				}
 				
 				

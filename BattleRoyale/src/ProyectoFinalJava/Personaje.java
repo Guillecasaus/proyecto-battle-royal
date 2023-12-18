@@ -161,9 +161,7 @@ public class Personaje {
 
 	@Override
 	public String toString() {
-		return "Personaje [nombre=" + nombre + ", vidaPersonaje=" + vidaPersonaje + ", listaHerramientas="
-				+ listaHerramientas + ", tipoUser=" + tipoUser + ", numeroHerramientas=" + numeroHerramientas + ", tipoPer="
-				+ tipoPer + "]";
+		return "Numero Jugador: " + numeroJugador + " Nombre Personaje: "+ nombre + " Tipo de personje: " + tipoPer + " Vida personaje: " + vidaPersonaje;
 	}
 	
 	//Funcion que se llama para cada personaje al final de su turno
@@ -289,6 +287,8 @@ public class Personaje {
 		}
 		return -1;
 	}
+	
+	
 	
 
 }
