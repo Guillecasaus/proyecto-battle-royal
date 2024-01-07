@@ -1,0 +1,2725 @@
+Turno 0:
+    Jugador actuando: Sofía
+    Jugador afectado: Sofía
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: Sofía
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 6:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: Sofía
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 9:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 10:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 11:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 12:
+    Jugador actuando: Sofía
+    Jugador afectado: Sofía
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 13:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 14:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 15:
+    Jugador actuando: Sofía
+    Jugador afectado: Sofía
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 16:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: Sofía
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 17:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 18:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 19:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 21:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 22:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 0:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 6:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 9:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 10:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 11:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 12:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 13:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 14:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 15:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 16:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 17:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 18:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 19:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 21:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 22:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 24:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 25:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 26:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 27:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 28:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 29:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 30:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 31:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 32:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 33:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 34:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 35:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 36:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 37:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 38:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 39:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 0:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 6:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 9:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 10:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 11:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 12:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 13:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 14:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 15:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 16:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 17:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 18:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 19:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 21:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 22:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 24:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 25:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 26:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 27:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 28:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 29:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 30:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 31:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 32:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 33:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 34:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 35:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 36:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 37:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 38:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 39:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 0:
+    Jugador actuando: aa
+    Jugador afectado: aa
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: aa
+    Jugador afectado: aa
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: aa
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: aa
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: aa
+    Jugador afectado: aa
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 6:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: aa
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 9:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 10:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 11:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 12:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 13:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 14:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 15:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 16:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 17:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: ERROR
+    Acción se lleva a cabo con éxito: false
+
+Turno 18:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 19:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 21:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 22:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: aa
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 24:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 25:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: ERROR
+    Acción se lleva a cabo con éxito: false
+
+Turno 26:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: aa
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 27:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 28:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: ERROR
+    Acción se lleva a cabo con éxito: false
+
+Turno 29:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 30:
+    Jugador actuando: aa
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 0:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 6:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 9:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 10:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 11:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 12:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 13:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 14:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 15:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 16:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 17:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 18:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 19:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 21:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 22:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 24:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 25:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 26:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 27:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 28:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 29:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 30:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 31:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 32:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 33:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 34:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 35:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 36:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 37:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 38:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 39:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 0:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 6:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 9:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 10:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 11:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 12:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 13:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 14:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 15:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 16:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 17:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 18:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 19:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 20:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 21:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 22:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 24:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 25:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 26:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 27:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 28:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 29:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 30:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 31:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 32:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 33:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 34:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 35:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 36:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 37:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 0:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 6:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 9:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 10:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 11:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 12:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 13:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 14:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 15:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 16:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 17:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 18:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 19:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 21:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 22:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 24:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 0:
+    Jugador actuando: aa
+    Jugador afectado: aa
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: ERROR
+    Acción se lleva a cabo con éxito: false
+
+Turno 6:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: aa
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 9:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 10:
+    Jugador actuando: aa
+    Jugador afectado: aa
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 11:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 12:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 13:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 14:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 15:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 16:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 17:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 18:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 19:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 21:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 22:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 24:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 25:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 26:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 27:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 28:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 29:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 30:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 31:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 32:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 33:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 34:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 35:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 36:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 37:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 38:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 39:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 0:
+    Jugador actuando: aa
+    Jugador afectado: aa
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: aa
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 6:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 9:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 10:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 11:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 12:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 13:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 14:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 15:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 16:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 17:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 18:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 19:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 21:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 22:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 24:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 25:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 26:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 27:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 28:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 29:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 30:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 31:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 32:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 33:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 34:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 35:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 0:
+    Jugador actuando: aa
+    Jugador afectado: aa
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: aa
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: aa
+    Jugador afectado: aa
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 6:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 9:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 10:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 11:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 12:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 13:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 14:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 15:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 16:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 17:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 18:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 19:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 21:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 22:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 24:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 25:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 26:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 27:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 28:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 29:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 30:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 31:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 32:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 33:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 34:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 35:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 36:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 37:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 38:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 39:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 0:
+    Jugador actuando: aa
+    Jugador afectado: aa
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: ERROR
+    Acción se lleva a cabo con éxito: false
+
+Turno 6:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 9:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: aa
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 10:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 11:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 12:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 13:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 14:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 15:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 16:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 17:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 18:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 19:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 21:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 22:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 24:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 25:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 26:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 27:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 0:
+    Jugador actuando: aa
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: aa
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: aa
+    Jugador afectado: N/A
+    Acción en el turno: ERROR
+    Acción se lleva a cabo con éxito: false
+
+Turno 6:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 7:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: aa
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 9:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 10:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 11:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 12:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 13:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 14:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 15:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 16:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 17:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 18:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 19:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 21:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 22:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 24:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 25:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 26:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 27:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 28:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 29:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 30:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 31:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 32:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 33:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 34:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 35:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 36:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 37:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 38:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 39:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 0:
+    Jugador actuando: aa
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 1:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: aa
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 2:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 3:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: aa
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 4:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 5:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 6:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina4
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina4
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 9:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 10:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 11:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 12:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 13:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 14:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 15:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 16:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 17:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 18:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 19:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 21:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 22:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 24:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 25:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 26:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 27:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 28:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 29:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 30:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: N/A
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: false
+
+Turno 31:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Resultado final: Victoria de jugadorMaquina0

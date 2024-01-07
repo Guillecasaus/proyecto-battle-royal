@@ -44,19 +44,6 @@ public class Partida {
 		}
 		JOptionPane.showMessageDialog(null, texto);
 	}
-	public void mostrarPersonajesmaquina() {
-		/*for(Personaje personajes : this.listaPersonajes) {
-			System.out.println("El personaje nombre : "+ personajes.getNombre());
-		}*/
-		
-		String texto = "";
-	
-		for(int i=0; i < this.listaPersonajes.size(); i++) {
-			System.out.println(this.listaPersonajes.get(i).toString());
-			texto = texto + this.listaPersonajes.get(i).toString() + "\n";
-		}
-		JOptionPane.showMessageDialog(null, texto);
-	}
 	
 	public String textoPersonajes() {
 		/*for(Personaje personajes : this.listaPersonajes) {

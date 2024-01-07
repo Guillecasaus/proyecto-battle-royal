@@ -22,7 +22,7 @@ public class Menu {
 				Partida partidaActiva = new Partida();
 				JOptionPane.showMessageDialog(null, "Partida iniciada");
 				do {
-					String numeroJugadores = JOptionPane.showInputDialog("Introduce número de jugadores (Máximo jugadores: "+ Partida.NUM_MAX_JUGADORES+" )");
+					String numeroJugadores = JOptionPane.showInputDialog("Introduce número de jugadores (Máximo jugadores: "+ partidaActiva.getNumJugadoresPartida()+" )");
 					partidaActiva.setNumJugadoresPartida(Integer.parseInt(numeroJugadores));
 					if(partidaActiva.getNumJugadoresPartida() > Partida.NUM_MAX_JUGADORES) {
 						JOptionPane.showMessageDialog(null, "Has introducido más jugadores del máximo permitido");
