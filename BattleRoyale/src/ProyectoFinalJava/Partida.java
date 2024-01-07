@@ -2,8 +2,7 @@ package ProyectoFinalJava;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 public class Partida {
 	public static final Integer TURNOS_CD_ESCOGER_HERRAMIENTA = 4;
@@ -50,14 +49,30 @@ public class Partida {
 		}*/
 		
 		String texto = "";
-	
+		System.out.println("Soy maquina\n");
 		for(int i=0; i < this.listaPersonajes.size(); i++) {
 			System.out.println(this.listaPersonajes.get(i).toString());
 			texto = texto + this.listaPersonajes.get(i).toString() + "\n";
 		}
-		JOptionPane.showMessageDialog(null, texto);
+		JOptionPane option = new JOptionPane("",JOptionPane.INFORMATION_MESSAGE);
+		option.setMessage(texto);  
+		JDialog dialog = option.createDialog(null, "Accion");
+		new Thread(new Runnable() {
+		@Override
+		
+			public void run() {
+			try {
+				Thread.sleep(1500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			dialog.setVisible(false);
+			}
+		}).start();
+		dialog.setVisible(true);
+		dialog.dispose();
 	}
-	
 	public String textoPersonajes() {
 		/*for(Personaje personajes : this.listaPersonajes) {
 			System.out.println("El personaje nombre : "+ personajes.getNombre());
