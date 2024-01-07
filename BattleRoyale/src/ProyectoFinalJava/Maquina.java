@@ -1,5 +1,6 @@
 package ProyectoFinalJava;
 
+import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
 public class Maquina {
@@ -15,6 +16,7 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 		Integer vida;
 		Turno turnoActual = new Turno(numTurnos);
 		turnoActual.setActua(partidaActual.getListaPersonajes().get(numJugadorAtacante).getNombre());
+		JOptionPane option = new JOptionPane("",JOptionPane.INFORMATION_MESSAGE);
 		
 		do {
 		jugadorAtacado = (int)(Math.random()*partidaActual.jugadoresDisponibles());
@@ -32,6 +34,7 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 					//System.out.println("paso 1 " + jugadorAtacado + damage );
 					if (partidaActual.devolverVidaPersonaje(jugadorAtacado) <= 0) {
 						partidaActual.jugadorEliminado(jugadorAtacado);
+						
 					}
 					turnoActual.setExitoso(true);
 				
@@ -43,7 +46,22 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 						damage = partidaActual.obtenerDamage(numJugadorAtacante) + partidaActual.getListaPersonajes().get(numJugadorAtacante).inventario.getListaHerramientas().get(menuHerramientaAtaque).getBonus();
 						partidaActual.getListaPersonajes().get(numJugadorAtacante).getInventario().controlHerramientaUsos(menuHerramientaAtaque);
 					} else {
-						JOptionPane.showMessageDialog(null, "No tiene ninguna herramienta en esta posicion de inventario");
+						option.setMessage("No tiene ninguna herramienta en esta posicion de inventario");  
+						JDialog dialog = option.createDialog(null, "Accion");
+						new Thread(new Runnable() {
+						@Override						
+							public void run() {
+							try {
+								Thread.sleep(100);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+							dialog.setVisible(false);
+							}
+						}).start();
+						dialog.setVisible(true);
+						dialog.dispose();
 						damage = partidaActual.obtenerDamage(numJugadorAtacante);
 						turnoActual.setExitoso(false);
 					}	
@@ -70,7 +88,23 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 				}
 				turnoActual.setExitoso(true);
 			} else {
-				JOptionPane.showMessageDialog(null, "La habilidad no está disponible");
+				//JOptionPane.showMessageDialog(null, "La habilidad no está disponible");
+				option.setMessage("La habilidad no está disponible");  
+				JDialog dialog = option.createDialog(null, "Accion");
+				new Thread(new Runnable() {
+				@Override						
+					public void run() {
+					try {
+						Thread.sleep(100);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					dialog.setVisible(false);
+					}
+				}).start();
+				dialog.setVisible(true);
+				dialog.dispose();
 				//TODO Añadir opcio realizar ataque normal
 				turnoActual.setExitoso(false);
 			}
@@ -99,7 +133,23 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 						turnoActual.setExitoso(true);
 					break;
 					default:
-						JOptionPane.showMessageDialog(null, "No existe la herramienta escogida");
+						//JOptionPane.showMessageDialog(null, "No existe la herramienta escogida");
+						option.setMessage("No existe la herramienta escogida");  
+						JDialog dialog = option.createDialog(null, "Accion");
+						new Thread(new Runnable() {
+						@Override						
+							public void run() {
+							try {
+								Thread.sleep(100);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+							dialog.setVisible(false);
+							}
+						}).start();
+						dialog.setVisible(true);
+						dialog.dispose();
 						turnoActual.setExitoso(false);
 				}
 			}
@@ -114,7 +164,23 @@ public static Turno turnoMaquina(Partida partidaActual, Integer numJugadorAtacan
 		break;
 		
 		default:	
-			JOptionPane.showMessageDialog(null, "Valor introducido erróneo");
+			//JOptionPane.showMessageDialog(null, "Valor introducido erróneo");
+			option.setMessage("Valor introducido erróneo");  
+			JDialog dialog = option.createDialog(null, "Accion");
+			new Thread(new Runnable() {
+			@Override						
+				public void run() {
+				try {
+					Thread.sleep(100);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				dialog.setVisible(false);
+				}
+			}).start();
+			dialog.setVisible(true);
+			dialog.dispose();			
 			turnoActual.setAccionesTurno(Acciones.ERROR);;
 		}
 		return turnoActual;		

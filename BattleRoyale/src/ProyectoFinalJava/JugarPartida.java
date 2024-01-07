@@ -200,12 +200,21 @@ public class JugarPartida {
 					}
 			}	
 			listaTurnos.add(turnoActual);
+			
+			//Controlar cuando el ultimo jugador ha eliminado a alguien
+			if(numJugadorAtacante >= partidaActual.jugadoresDisponibles()) {
+				numJugadorAtacante --;			
+			}
+
+			
 			if (partidaActual.esMaquina(numJugadorAtacante) == 1)
 			{
+				System.out.println("Maquina eliminado \n");
 				partidaActual.mostrarPersonajesmaquina();
 			}
 			else
 			{
+				System.out.println("Personaje eliminado \n");
 				partidaActual.mostrarPersonajes();
 			}
 			  
@@ -213,11 +222,10 @@ public class JugarPartida {
 		
 			//System.out.println("Final turno: "+ turnoActual+" "+ numJugadorAtacante+" "+partidaActual.jugadoresDisponibles());
 			//Controlar cuando el ultimo jugador ha eliminado a alguien
-			if(numJugadorAtacante >= partidaActual.jugadoresDisponibles()) {
-			
+			/*if(numJugadorAtacante >= partidaActual.jugadoresDisponibles()) {
 				numJugadorAtacante --;
 			
-			}
+			}*/
 			
 			//Jugador que gana la partida 
 			if(partidaActual.jugadoresDisponibles() == 1) {

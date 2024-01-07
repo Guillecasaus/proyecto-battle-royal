@@ -1,19 +1,19 @@
-Resultado final: Victoria de jugadorMaquina0Turno 0:
+Turno 0:
     Jugador actuando: jugadorMaquina0
     Jugador afectado: jugadorMaquina0
-    Acción en el turno: recuperarVida
+    Acción en el turno: cogerObjeto
     Acción se lleva a cabo con éxito: true
 
 Turno 1:
     Jugador actuando: jugadorMaquina1
-    Jugador afectado: jugadorMaquina4
-    Acción en el turno: HabilidadOfensiva
+    Jugador afectado: jugadorMaquina1
+    Acción en el turno: cogerObjeto
     Acción se lleva a cabo con éxito: true
 
 Turno 2:
     Jugador actuando: jugadorMaquina2
-    Jugador afectado: jugadorMaquina0
-    Acción en el turno: atacarHerramienta
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
     Acción se lleva a cabo con éxito: true
 
 Turno 3:
@@ -23,39 +23,129 @@ Turno 3:
     Acción se lleva a cabo con éxito: true
 
 Turno 4:
-    Jugador actuando: jugadorMaquina4
-    Jugador afectado: jugadorMaquina4
-    Acción en el turno: recuperarVida
-    Acción se lleva a cabo con éxito: true
-
-Turno 5:
     Jugador actuando: jugadorMaquina0
     Jugador afectado: jugadorMaquina0
-    Acción en el turno: recuperarVida
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 5:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
     Acción se lleva a cabo con éxito: true
 
 Turno 6:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 7:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 8:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 9:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: atacarHerramienta
+    Acción se lleva a cabo con éxito: true
+
+Turno 10:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: true
+
+Turno 11:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 12:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 13:
     Jugador actuando: jugadorMaquina1
     Jugador afectado: jugadorMaquina1
     Acción en el turno: recuperarVida
     Acción se lleva a cabo con éxito: true
 
-Turno 7:
+Turno 14:
     Jugador actuando: jugadorMaquina2
-    Jugador afectado: jugadorMaquina0
-    Acción en el turno: atacarHerramienta
-    Acción se lleva a cabo con éxito: true
-
-Turno 8:
-    Jugador actuando: jugadorMaquina3
-    Jugador afectado: jugadorMaquina3
+    Jugador afectado: jugadorMaquina2
     Acción en el turno: cogerObjeto
     Acción se lleva a cabo con éxito: false
 
-Turno 9:
-    Jugador actuando: jugadorMaquina4
-    Jugador afectado: jugadorMaquina1
-    Acción en el turno: atacarHerramienta
+Turno 15:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: atacarNormal
     Acción se lleva a cabo con éxito: true
 
-Resultado final: Victoria de jugadorMaquina0
+Turno 16:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 17:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 18:
+    Jugador actuando: jugadorMaquina2
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: cogerObjeto
+    Acción se lleva a cabo con éxito: false
+
+Turno 19:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: recuperarVida
+    Acción se lleva a cabo con éxito: true
+
+Turno 20:
+    Jugador actuando: jugadorMaquina0
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 21:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina2
+    Acción en el turno: HabilidadOfensiva
+    Acción se lleva a cabo con éxito: true
+
+Turno 22:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 23:
+    Jugador actuando: jugadorMaquina3
+    Jugador afectado: jugadorMaquina0
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Turno 24:
+    Jugador actuando: jugadorMaquina1
+    Jugador afectado: jugadorMaquina3
+    Acción en el turno: atacarNormal
+    Acción se lleva a cabo con éxito: true
+
+Resultado final: Victoria de jugadorMaquina1
