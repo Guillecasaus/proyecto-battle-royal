@@ -43,7 +43,7 @@ public class Menu {
 				if(opcionLog.equals("si")) {
 					try {
 						File logFile = new File("logPartida.txt");
-						FileWriter fileWriter = new FileWriter(logFile, logFile.exists());
+						FileWriter fileWriter = new FileWriter(logFile);
 					
 						for (int i = 0; i < listaTurnos.size(); i++) {
 							fileWriter.append(listaTurnos.get(i).toString());

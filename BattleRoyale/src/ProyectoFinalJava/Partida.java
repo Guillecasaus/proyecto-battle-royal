@@ -178,6 +178,10 @@ public class Partida {
 	
 
 	public Integer esMaquina(Integer posicionJugador) {
+		if (posicionJugador >= this.listaPersonajes.size()) {
+			return 0;
+		}
+		
 		if(this.listaPersonajes.get(posicionJugador).getTipoUser() == TipoJugador.maquina) {
 			return 1;
 		}

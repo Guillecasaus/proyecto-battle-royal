@@ -15,7 +15,7 @@ public static void crearJugadores(Partida partidaActual) {
 	
 		
 		do {
-			String tipoJugador = JOptionPane.showInputDialog("1. Mago\n2. Guerrero\n3. Elfo\n4. Generar juagdores máquina");
+			String tipoJugador = JOptionPane.showInputDialog("1. Mago\n2. Guerrero\n3. Elfo\n4. Generar jugadores máquina");
 			
 				switch(tipoJugador) {
 					case "1":
