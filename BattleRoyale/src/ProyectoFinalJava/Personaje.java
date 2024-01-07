@@ -7,77 +7,47 @@ import javax.swing.JOptionPane;
 
 public class Personaje {
 
-	public static final Integer MAX_VIDA_PERSONAJE = 100;
-	public static final Integer NUM_MAX_HERRAMIENTAS = 3;
-	public static final Integer NUM_INICIAL_HERRAMIENTAS = 0;
-	public static final Integer ATAQUE_NORMAL = 10;
-	public static final Integer ATAQUE_HABILIDAD = 30;
-	public static final Integer COOLDOWN_HABILIDAD = 4;
+	public static final Integer MAX_VIDA_DEFAULT = 100;
+	public static final Integer ATAQUE_NORMAL_DEFAULT = 10;
+	public static final Integer ATAQUE_HABILIDAD_DEFAULT = 30;
+	public static final Integer TURNOS_HABILIDAD_DEFAULT = 4;
 	
-	private String nombre;
-	private Integer vidaPersonaje;
-	private List <Herramientas> listaHerramientas; 
-	private TipoJugador tipoUser;
-	private Integer numeroHerramientas;
-	private TipoPersonaje tipoPer;
-	private Integer numeroJugador;
+	protected String nombre;
+	protected Integer vidaPersonaje;
+	protected TipoJugador tipoUser;
+	protected TipoPersonaje tipoPer;
+	protected Integer numeroJugador;
 	
-	//TRUE si está esperando a acabar cooldown, FALSE si la habilidad está lista
-	protected Boolean estaEnCD;
-	//Contador cooldown. Empieza en 0 y pasa a un numero especificado tras usarse la habilidad
-	protected Integer counterCD;
-	//Daño de ataque normal, al que luego se aplica el bonus por arma equipada (daño final = ataqueNormal * bonus arma) 
+	//Daño de ataque normal 
 	protected Integer ataqueNormal;
-	//Daño hecho por la habilidad con cooldown (no dependiente de herramientas)
+	//Daño hecho por la habilidad especifica de personaje
 	protected Integer ataqueHabilidad;
-	//Cooldown de la habilidad en cuestion (num turnos hasta que se puede usar otra vez)
-	protected Integer cooldownHabilidad;
+	//Turnos cooldown de la habilidad especifica de personaje
+	protected Integer turnosHabilidad;
 	
-	//Boolean y contador cooldown para obtener herramientas
-	protected Boolean estaCDHerramienta;
-	protected Integer counterCDHerramienta;
+	//Objetos Cooldown, manejan cooldowns independientemente
+	protected Cooldown CDHabilidad;
+	protected Cooldown CDCogerHerramienta;
+	
+	//Objeto Inventario, gestiona herramientas personaje
+	protected Inventario inventario;
 		
 	public Personaje(String nombre, TipoJugador tipoUser, TipoPersonaje tipoPer, Integer numeroJugador) {
-		this.nombre = nombre;
-		this.vidaPersonaje = Personaje.MAX_VIDA_PERSONAJE;
-		this.tipoUser = tipoUser;
-		this.listaHerramientas = new ArrayList<Herramientas>();
-		this.numeroHerramientas = Personaje.NUM_INICIAL_HERRAMIENTAS;
-		this.tipoPer = tipoPer;
-		this.ataqueHabilidad = ATAQUE_HABILIDAD;
-		this.ataqueNormal = ATAQUE_NORMAL;
-		this.cooldownHabilidad = COOLDOWN_HABILIDAD;
-		this.counterCD = 0;
-		this.numeroJugador = numeroJugador;
-		this.estaEnCD = false;
-		this.estaCDHerramienta = false;
-		this.counterCDHerramienta = 0;
-		
+		this(nombre, tipoUser, tipoPer, numeroJugador, Personaje.MAX_VIDA_DEFAULT, Personaje.ATAQUE_HABILIDAD_DEFAULT, Personaje.ATAQUE_NORMAL_DEFAULT, Personaje.TURNOS_HABILIDAD_DEFAULT);
 	}
 	
-	public Personaje(String nombre, TipoJugador tipoUser, Integer vida,  TipoPersonaje tipoPer, Integer ataqueNormal, Integer ataqueHabilidad, Integer cooldownHabilidad, Integer numeroJugador) {
+	public Personaje(String nombre, TipoJugador tipoUser, TipoPersonaje tipoPer, Integer numeroJugador, Integer vida, Integer ataqueHabilidad, Integer ataqueNormal, Integer turnosHabilidad) {
 		this.nombre = nombre;
-		this.vidaPersonaje = vida;
 		this.tipoUser = tipoUser;
-		this.listaHerramientas = new ArrayList<Herramientas>();
-		this.numeroHerramientas = Personaje.NUM_INICIAL_HERRAMIENTAS;
 		this.tipoPer = tipoPer;
+		this.numeroJugador = numeroJugador;
+		this.vidaPersonaje = vida;
 		this.ataqueHabilidad = ataqueHabilidad;
 		this.ataqueNormal = ataqueNormal;
-		this.cooldownHabilidad = cooldownHabilidad;
-		this.counterCD = 0;
-		this.numeroJugador = numeroJugador;
-		this.estaEnCD = false;
-		this.estaCDHerramienta = false;
-		this.counterCDHerramienta = 0;
-	}
-	
-	public Integer getCounterCD() {
-		return counterCD;
-	}
-
-	public void setCounterCD(Integer counterCD) {
-		this.counterCD = counterCD;
+		this.turnosHabilidad = turnosHabilidad;
+		this.CDHabilidad = new Cooldown();
+		this.CDCogerHerramienta = new Cooldown();
+		this.inventario = new Inventario();
 	}
 
 	public Integer getAtaqueNormal() {
@@ -96,12 +66,12 @@ public class Personaje {
 		this.ataqueHabilidad = ataqueHabilidad;
 	}
 
-	public Integer getCooldownHabilidad() {
-		return cooldownHabilidad;
+	public Integer getTurnosHabilidad() {
+		return turnosHabilidad;
 	}
 
-	public void setCooldownHabilidad(Integer cooldownHabilidad) {
-		this.cooldownHabilidad = cooldownHabilidad;
+	public void setTurnosHabilidad(Integer turnosHabilidad) {
+		this.turnosHabilidad = turnosHabilidad;
 	}
 
 	public String getNombre() {
@@ -119,15 +89,6 @@ public class Personaje {
 	public void setVidaPersonaje(Integer vidaPersonaje) {
 		this.vidaPersonaje = vidaPersonaje;
 	}
-
-	public List<Herramientas> getListaHerramientas() {
-		return listaHerramientas;
-	}
-
-	public void setListaHerramientas(List<Herramientas> listaHerramientas) {
-		this.listaHerramientas = listaHerramientas;
-	}
-
 	public TipoJugador getTipoUser() {
 		return tipoUser;
 	}
@@ -151,45 +112,33 @@ public class Personaje {
 		this.numeroJugador = numeroJugador;
 	}
 	
-	public Integer getCounterCDHerramienta() {
-		return counterCDHerramienta;
+	public Cooldown getCDHabilidad() {
+		return CDHabilidad;
 	}
 
-	public void setCounterCDHerramienta(Integer counterCDHerramienta) {
-		this.counterCDHerramienta = counterCDHerramienta;
+	public void setCDHabilidad(Cooldown cDHabilidad) {
+		CDHabilidad = cDHabilidad;
+	}
+
+	public Cooldown getCDCogerHerramienta() {
+		return CDCogerHerramienta;
+	}
+
+	public void setCDCogerHerramienta(Cooldown cDCogerHerramienta) {
+		CDCogerHerramienta = cDCogerHerramienta;
+	}
+
+	public Inventario getInventario() {
+		return inventario;
+	}
+
+	public void setInventario(Inventario inventario) {
+		this.inventario = inventario;
 	}
 
 	@Override
 	public String toString() {
 		return "Numero Jugador: " + numeroJugador + " Nombre Personaje: "+ nombre + " Tipo de personje: " + tipoPer + " Vida personaje: " + vidaPersonaje;
-	}
-	
-	//Funcion que se llama para cada personaje al final de su turno
-	public void controlCD() {
-		//Si el cd es mas que 0, se baja 1 
-		if (this.counterCD > 0) {
-			this.counterCD--;
-		}
-		//Una vez modificado, se ve si ha acabado justo su cd
-		if (this.counterCD == 0) {
-			this.estaEnCD = false;
-		} else {
-			this.estaEnCD = true;
-		}
-	}
-
-	//Funcion que se llama para cada personaje al final de su turno
-	public void controlCDHerramienta() {
-		//Si el cd es mas que 0, se baja 1 
-		if (this.counterCDHerramienta > 0) {
-			this.counterCDHerramienta--;
-		}
-		//Una vez modificado, se ve si ha acabado justo su cd
-		if (this.counterCDHerramienta == 0) {
-			this.estaCDHerramienta = false;
-		} else {
-			this.estaCDHerramienta = true;
-		}
 	}
 		
 	public Integer quitarVida(Integer damage) {
@@ -208,53 +157,8 @@ public class Personaje {
 		return vida;
 	}
 	
-	/*
-	public Integer habilidad() {
-		return 1;
-	}
-	*/
 	public Integer recuperarVida() {
 		return 1;
-	}
-	
-	public Integer asignarHerramienta(Herramientas herramientaAsignar) {
-		if(this.numeroHerramientas >= Personaje.NUM_MAX_HERRAMIENTAS) {
-			return 0;		
-		}
-		else{
-			this.listaHerramientas.add(herramientaAsignar);		
-			this.numeroHerramientas ++;	
-			return 1;
-		}	
-	}
-	
-	public void mostrarInventarioHerramientas() {
-		String texto = "Herramientas en el inventario: \n\n";
-	
-		for(int i=0; i < this.listaHerramientas.size(); i++) {
-			System.out.println("Posicion " + i + " - "+ this.listaHerramientas.get(i).toString() + "\n");
-			texto = texto + "Posicion " + i + " - "+ this.listaHerramientas.get(i).toString() + "\n"	;
-		}
-		JOptionPane.showMessageDialog(null, texto);
-	}
-	
-	public String textoInventarioHerramientas() {
-		String texto = "";
-	
-		for(int i=0; i < this.listaHerramientas.size(); i++) {
-			System.out.println("Posicion " + i + " - "+ this.listaHerramientas.get(i).toString() + "\n");
-			texto = texto + "Posicion " + i + " - "+ this.listaHerramientas.get(i).toString() + "\n";
-		}
-		return texto;
-	}
-	
-	public void controlHerramientaUsos(Integer numHerramienta) {
-		//Quitar 1 uso a herramienta indicada
-		this.listaHerramientas.get(numHerramienta).setUsosRestantes(this.listaHerramientas.get(numHerramienta).getUsosRestantes()-1);
-		//Comprobar si quedan usos, quitar herramienta de inventario si no quedan
-		if(this.listaHerramientas.get(numHerramienta).getUsosRestantes() == 0) {
-			this.listaHerramientas.remove(this.listaHerramientas.get(numHerramienta));
-		}
 	}
 
 	public void actualizarValoresPersonajeEliminado() {
@@ -270,12 +174,7 @@ public class Personaje {
 	}
 
 	public boolean equals(Personaje personaje) {
-		if(this.nombre.equals(personaje.getNombre())) {
-			return true;
-		}
-		else {
-			return false;
-		}
+		return this.nombre.equals(personaje.getNombre());
 	}
 	
 	public Integer compareTo(Personaje personaje) {
@@ -289,6 +188,8 @@ public class Personaje {
 	}
 	
 	
+	
+
 	
 
 }

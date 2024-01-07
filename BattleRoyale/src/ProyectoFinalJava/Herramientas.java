@@ -1,24 +1,16 @@
 package ProyectoFinalJava;
 
 public class Herramientas {
-	protected String nombre;
 	protected Integer bonus;
 	protected TipoArma tipo;
 	protected Integer usosRestantes;
+	protected Integer numHerramienta;
 	
-	public Herramientas(String nombre, Integer bonus, TipoArma tipo, Integer usosRestantes) {
-		this.nombre = nombre;
+	public Herramientas(Integer bonus, TipoArma tipo, Integer usosRestantes, Integer numHerramienta) {
 		this.bonus = bonus;
 		this.tipo = tipo;
 		this.usosRestantes = usosRestantes;
-	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+		this.numHerramienta = numHerramienta;
 	}
 
 	public Integer getBonus() {
@@ -45,6 +37,14 @@ public class Herramientas {
 		this.usosRestantes = usosRestantes;
 	}
 	
+	public Integer getNumHerramienta() {
+		return numHerramienta;
+	}
+
+	public void setNumHerramienta(Integer numHerramienta) {
+		this.numHerramienta = numHerramienta;
+	}
+
 	@Override
 	public String toString() {
 		return "Herramienta " + tipo + ": bonus = " + bonus + ", Usos = "

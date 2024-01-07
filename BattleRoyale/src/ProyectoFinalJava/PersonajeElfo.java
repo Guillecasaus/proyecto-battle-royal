@@ -1,24 +1,13 @@
 package ProyectoFinalJava;
 
 public class PersonajeElfo extends Personaje {
-
-	public static final Integer MAX_VIDA_ELFO = 110;
-	public static final Integer ATAQUE_NORMAL_ELFO = 20;
-	public static final Integer ATAQUE_HABILIDAD_ELFO = 60;
-	public static final Integer COOLDOWN_HABILIDAD_ELFO = 5;
+	public static final Integer MAX_VIDA = 110;
+	public static final Integer ATAQUE_NORMAL = 20;
+	public static final Integer ATAQUE_HABILIDAD = 60;
+	public static final Integer TURNOS_HABILIDAD = 5;
+	public static final Integer VIDA_RECUPERAR = 10;
 	
 	public PersonajeElfo(String nombre, TipoJugador tipo, Integer numeroJugador) {
-		super(nombre, tipo, PersonajeElfo.MAX_VIDA_ELFO, TipoPersonaje.elfo, PersonajeElfo.ATAQUE_NORMAL_ELFO, PersonajeElfo.ATAQUE_HABILIDAD_ELFO, PersonajeElfo.COOLDOWN_HABILIDAD_ELFO, numeroJugador);
+		super(nombre, tipo, TipoPersonaje.elfo, numeroJugador, PersonajeElfo.MAX_VIDA, PersonajeElfo.ATAQUE_HABILIDAD, PersonajeElfo.ATAQUE_NORMAL, PersonajeElfo.TURNOS_HABILIDAD);
 	}
-	
-	/*
-	@Override 
-	public Integer habilidad() {
-		return 20;
-	}  
-	*/
-	public Integer recuperarVida() {
-		return 10;
-	}
-
 }

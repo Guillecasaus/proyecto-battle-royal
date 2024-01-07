@@ -27,7 +27,7 @@ public static void crearJugadores(Partida partidaActual) {
 						}
 						}while(partidaActual.comparaPersonaje(mago));
 						partidaActual.nuevoPersonaje(mago);
-						mago.asignarHerramienta(new HerramientaBaston("baston"));
+						mago.getInventario().asignarHerramienta(new HerramientaBaston(1));
 					break;	
 					case "2":
 						do {
@@ -38,7 +38,7 @@ public static void crearJugadores(Partida partidaActual) {
 						}
 						}while(partidaActual.comparaPersonaje(guerrero));
 						partidaActual.nuevoPersonaje(guerrero);
-						guerrero.asignarHerramienta(new HerramientaBaston("baston"));
+						guerrero.getInventario().asignarHerramienta(new HerramientaBaston(1));
 					break;	
 					case "3":
 						do {
@@ -49,7 +49,7 @@ public static void crearJugadores(Partida partidaActual) {
 						}
 						}while(partidaActual.comparaPersonaje(elfo));
 						partidaActual.nuevoPersonaje(elfo);
-						elfo.asignarHerramienta(new HerramientaBaston("baston"));
+						elfo.getInventario().asignarHerramienta(new HerramientaBaston(1));
 					break;
 					case "4":					
 						for(int i=numJugadores; i<partidaActual.getNumJugadoresPartida(); i++) {
@@ -59,21 +59,21 @@ public static void crearJugadores(Partida partidaActual) {
 								case 1:
 									PersonajeGuerrero guerreroMaquina = new PersonajeGuerrero(nombreMaquina, TipoJugador.maquina, numJugadores + 1);							
 									partidaActual.nuevoPersonaje(guerreroMaquina);
-									guerreroMaquina.asignarHerramienta(new HerramientaBaston("baston"));
+									guerreroMaquina.getInventario().asignarHerramienta(new HerramientaBaston(1));
 									numJugadores++;
 								break;	
 							
 								case 2:
 									PersonajeMago magoMaquina = new PersonajeMago(nombreMaquina, TipoJugador.maquina, numJugadores + 1);							
 									partidaActual.nuevoPersonaje(magoMaquina);
-									magoMaquina.asignarHerramienta(new HerramientaBaston("baston"));
+									magoMaquina.getInventario().asignarHerramienta(new HerramientaBaston(1));
 									numJugadores++;
 								break;
 							
 								case 3:
 									PersonajeElfo elfoMaquina = new PersonajeElfo(nombreMaquina, TipoJugador.maquina, numJugadores + 1);							
 									partidaActual.nuevoPersonaje(elfoMaquina);
-									elfoMaquina.asignarHerramienta(new HerramientaBaston("baston"));
+									elfoMaquina.getInventario().asignarHerramienta(new HerramientaBaston(1));
 									numJugadores++;
 								break;
 							

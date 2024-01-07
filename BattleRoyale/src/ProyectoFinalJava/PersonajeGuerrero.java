@@ -1,24 +1,14 @@
 package ProyectoFinalJava;
 
 public class PersonajeGuerrero extends Personaje {
-
-	public static final Integer MAX_VIDA_GUERRERO = 120;
-	public static final Integer ATAQUE_NORMAL_GUERRERO = 15;
-	public static final Integer ATAQUE_HABILIDAD_GUERRERO = 40;
-	public static final Integer COOLDOWN_HABILIDAD_GUERRERO = 3;
+	public static final Integer MAX_VIDA = 120;
+	public static final Integer ATAQUE_NORMAL = 15;
+	public static final Integer ATAQUE_HABILIDAD = 40;
+	public static final Integer TURNOS_HABILIDAD = 3;
+	public static final Integer VIDA_RECUPERAR = 15;
 	
 	public PersonajeGuerrero(String nombre, TipoJugador tipo, Integer numeroJugador) {
-		super(nombre, tipo, PersonajeGuerrero.MAX_VIDA_GUERRERO, TipoPersonaje.guerrero, PersonajeGuerrero.ATAQUE_NORMAL_GUERRERO, PersonajeGuerrero.ATAQUE_HABILIDAD_GUERRERO, PersonajeGuerrero.COOLDOWN_HABILIDAD_GUERRERO, numeroJugador);
-	}
-	
-	/*
-	@Override 
-	public Integer habilidad() {
-		return 15;
-	} 
-	*/
-	public Integer recuperarVida() {
-		return 10;
+		super(nombre, tipo, TipoPersonaje.guerrero, numeroJugador, PersonajeGuerrero.MAX_VIDA, PersonajeGuerrero.ATAQUE_HABILIDAD, PersonajeGuerrero.ATAQUE_NORMAL, PersonajeGuerrero.TURNOS_HABILIDAD);
 	}
 
 }

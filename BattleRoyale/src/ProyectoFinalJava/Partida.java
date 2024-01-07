@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 public class Partida {
 	public static final Integer TURNOS_CD_ESCOGER_HERRAMIENTA = 4;
 	public static final Integer TURNO_INICIAL = 0;
-	public static final Integer NUM_MAX_JUGADORES = 5;
+	public static final Integer NUM_MAX_JUGADORES = 8;
 	public static final Integer NUM_INICIAL_JUGADORES = 0;
 	public static final Integer MAX_TURNOS = 10;
 	

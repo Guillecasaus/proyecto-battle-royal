@@ -14,7 +14,14 @@ public class Menu {
 	static JugarPartida jugar = new JugarPartida();
 	
 	public static void main(String[] args) {
-		String menu = JOptionPane.showInputDialog("1. Iniciar Partida\n2. Continuar Partida\n3 Terminar");
+		//String menu = JOptionPane.showInputDialog("1. Iniciar Partida\n2. Continuar Partida\n3 Terminar");
+		//System.out.println("Hello "+ menu);
+		String menu = "0";
+		IniciaPartida iniP = new IniciaPartida();
+		iniP.show();
+		do {
+			menu = iniP.getNumElegido().toString();
+		} while (iniP.getNumElegido().toString().equals("0"));
 		System.out.println("Hello "+ menu);
 		
 		switch(menu) {
